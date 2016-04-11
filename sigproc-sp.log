@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 11:06
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 11:35
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -269,7 +269,7 @@ Overfull \hbox (2.6681pt too wide) in paragraph at lines 145--146
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 177.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 179.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -278,19 +278,19 @@ Requested font "aett9" at 9.0pt
 Requested font "aeti9" at 9.0pt
 Requested font "aeti7" at 6.0pt
 
-Overfull \hbox (7.91669pt too wide) in paragraph at lines 190--194
+Overfull \hbox (7.91669pt too wide) in paragraph at lines 192--196
 \T1/aer/m/n/9 SIGS style spec-i-fi-ca-tions. No other ci-ta-tion for-mat is en-
 dorsed. 
  []
 
 
-Overfull \hbox (8.08696pt too wide) in paragraph at lines 196--207
+Overfull \hbox (8.08696pt too wide) in paragraph at lines 198--209
 \T1/aer/m/n/9 Because ta-bles can-not be split across pages, the best place-men
 t
  []
 
 
-Overfull \hbox (7.98079pt too wide) in paragraph at lines 225--235
+Overfull \hbox (7.98079pt too wide) in paragraph at lines 227--237
 \T1/aer/m/n/9 ta-ble's con-tents and the ta-ble cap-tion. As with a single-colu
 mn
  []
@@ -302,31 +302,28 @@ File: fly.eps Graphic file (type eps)
  <fly.eps>
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 271.
+(Font)              using `T1/aett/m/n' instead on input line 273.
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 271--271
+Underfull \hbox (badness 1087) in paragraph at lines 273--273
 \T1/aer/bx/n/9 for-mat) that has been re-sized with the \T1/aett/bx/n/9 eps-fig
 
  []
 
-
-Overfull \hbox (3.73358pt too wide) in paragraph at lines 280--284
+[2]
+Overfull \hbox (3.73358pt too wide) in paragraph at lines 282--286
 []\T1/aer/m/n/9 Note that ei-ther \T1/aer/bx/n/9 .ps \T1/aer/m/n/9 or \T1/aer/b
 x/n/9 .eps \T1/aer/m/n/9 for-mats are used; use the \T1/aett/bx/n/9 \eps-fig
  []
 
-[2]
 File: rosette.ps Graphic file (type eps)
- <rosette.ps>
-Underfull \hbox (badness 1442) in paragraph at lines 289--289
+<rosette.ps>
+Underfull \hbox (badness 1442) in paragraph at lines 291--291
 []\T1/aer/bx/n/9 Figure 3: A sam-ple black and white graphic
  []
 
 File: flies.eps Graphic file (type eps)
-<flies.eps> (sigproc-sp.bbl) [3
-
-] [4] (sigproc-sp.aux)
+<flies.eps> (sigproc-sp.bbl) [3] [4] (sigproc-sp.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
