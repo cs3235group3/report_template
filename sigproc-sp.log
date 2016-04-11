@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 16:14
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 16:20
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -245,18 +245,30 @@ Requested font "lasy6" at 6.0pt
 Requested font "lasy5" at 5.0pt
 Requested font "aebx9" at 9.0pt
 
-Overfull \hbox (5.50629pt too wide) in paragraph at lines 127--128
+Overfull \hbox (8.01532pt too wide) in paragraph at lines 119--122
+\T1/aer/m/n/9 se-cu-rity prin-ci-ples of Con-fi-den-tial-ity, In-tegrity and Av
+ail-abil-ity
+ []
+
+
+Overfull \hbox (3.40836pt too wide) in paragraph at lines 123--124
+\T1/aer/m/n/9 carry out ARP Spoof-ing with some ba-sic tech-ni-cal knowl-edge. 
+
+ []
+
+
+Overfull \hbox (5.50629pt too wide) in paragraph at lines 129--130
 \T1/aer/m/n/9 cat-e-gorised and or-gan-ised into dif-fer-ent lay-ers. In the TC
 P/IP
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 131--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--144
+Underfull \hbox (badness 10000) in paragraph at lines 140--146
 
  []
 
@@ -264,7 +276,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--144
 
 
 ]
-Overfull \hbox (2.11116pt too wide) in paragraph at lines 147--148
+Overfull \hbox (2.11116pt too wide) in paragraph at lines 149--150
 []\T1/aer/m/n/9 1. ARP Re-quest: Al-ice's com-puter sends out an ARP re-quest
  []
 
@@ -277,28 +289,23 @@ File: Poisoned_ARP.eps Graphic file (type eps)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-
-LaTeX Warning: Citation `goldendeep:arp3' on page \thepage  undefined on input 
-line 169.
-
-
-Overfull \hbox (2.64989pt too wide) in paragraph at lines 169--170
+Overfull \hbox (2.64989pt too wide) in paragraph at lines 171--172
 \T1/aer/m/n/9 Spoof-ing, such as Ag-ni-tum Out-post Fire-wall. How-ever, many
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
 [2]
-Overfull \hbox (3.60555pt too wide) in paragraph at lines 228--229
+Overfull \hbox (3.60555pt too wide) in paragraph at lines 230--231
 \T1/aer/m/n/9 us-ing a net-work en-crypted by WPA-Enterprise, it is oth-er-wise
 
  []
 
 
-Overfull \hbox (11.25653pt too wide) in paragraph at lines 237--238
+Overfull \hbox (11.25653pt too wide) in paragraph at lines 239--240
 \T1/aer/m/n/9 al-lowed us to do so. This is de-spite the topic be-ing self-prop
 osed
  []
@@ -306,7 +313,7 @@ osed
 (sigproc-sp.bbl
 Requested font "aeti9" at 9.0pt
 )
-LaTeX Font Info:    Try loading font information for T1+aett on input line 266.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 268.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -314,19 +321,19 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 Requested font "aett9" at 9.0pt
 Requested font "aeti7" at 6.0pt
 
-Overfull \hbox (7.91669pt too wide) in paragraph at lines 279--283
+Overfull \hbox (7.91669pt too wide) in paragraph at lines 281--285
 \T1/aer/m/n/9 SIGS style spec-i-fi-ca-tions. No other ci-ta-tion for-mat is en-
 dorsed. 
  []
 
 
-Overfull \hbox (8.08696pt too wide) in paragraph at lines 285--296
+Overfull \hbox (8.08696pt too wide) in paragraph at lines 287--298
 \T1/aer/m/n/9 Because ta-bles can-not be split across pages, the best place-men
 t
  []
 
 [3]
-Overfull \hbox (7.98079pt too wide) in paragraph at lines 314--324
+Overfull \hbox (7.98079pt too wide) in paragraph at lines 316--326
 \T1/aer/m/n/9 ta-ble's con-tents and the ta-ble cap-tion. As with a single-colu
 mn
  []
@@ -334,11 +341,7 @@ mn
 File: flies.eps Graphic file (type eps)
 <flies.eps> [4
 
-] [5] (sigproc-sp.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] [5] (sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
  1938 strings out of 428760
  20595 string characters out of 3163264
