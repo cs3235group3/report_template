@@ -28,6 +28,8 @@
 
 \documentclass{acm_proc_article-sp}
 \usepackage[none]{hyphenat}
+\usepackage{graphicx}
+
 \begin{document}
 
 \title{Detecting and Combating ARP Spoofing}
@@ -109,7 +111,7 @@ Thus, our project aims to create a program for users to actively detect if they 
 Address Resolution Protocol (ARP), spoofing}
 
 \keywords{ARP spoofing, network security, DHCP resolution,
-IDS, ARP protection} % NOT required for Proceedings
+IDS, ARP protection}
 
 \section{Introduction}
 The Address Resolution Protocol (ARP) is an important protocol in computer network communications. \\ Without this protocol, it would be difficult for computers to \\communicate with each other, because we would not know the MAC address of the computer we are communicating with. Thus, it would be difficult to establish an IP-to-MAC address mapping.
@@ -131,22 +133,25 @@ Firstly, in a typical modern computer, all IP addresses are resolved dynamically
 
 After that, suppose the the user Alice wishes to send some information to Bob. The following steps are then carried out: 
 
-(to include picture) \\
 1. ARP Request: Alice's computer sends out an ARP request to find out which MAC address has Bob's IP. 
 
-(to include picture) \\
+\includegraphics[width=3in]{ARP_Request.eps}
+
 2. When Bob's computer receives the request, he sends back an ARP response packet. 
+
+\includegraphics[width=3in]{ARP_Response.eps}
 
 3. Alice gets the response and stores the corresponding IP-to-MAC entry into the ARP cache. 
 
 
 \subsection{Poisoning the ARP Cache}
-(to include picture) \\
 If an attacker, Eve, wishes to carry out an MITM attack on the ARP, this is typically what happens: 
 
 1. Alice's computer sends out an ARP request to find out what is Bob's MAC address. 
 
 2. Before Bob's computer can reply, the attacker, Eve, sends a spam of packets to Alice's computer, claiming to be Bob. The ARP cache then becomes poisoned. 
+
+\includegraphics[width=3in]{Poisoned_ARP.eps}
 
 
 \section{Current Solutions and \\Mitigations}
@@ -279,48 +284,6 @@ Command&A Number&Comments\\ \hline
 \end{table*}
 % end the environment with {table*}, NOTE not {table}!
 
-\subsection{Figures}
-Like tables, figures cannot be split across pages; the
-best placement for them
-is typically the top or the bottom of the page nearest
-their initial cite.  To ensure this proper ``floating'' placement
-of figures, use the environment
-\textbf{figure} to enclose the figure and its caption.
-
-This sample document contains examples of \textbf{.eps}
-and \textbf{.ps} files to be displayable with \LaTeX.  More
-details on each of these is found in the \textit{Author's Guide}.
-
-\begin{figure}
-\centering
-\epsfig{file=fly.eps}
-\caption{A sample black and white graphic (.eps format).}
-\end{figure}
-
-\begin{figure}
-\centering
-\epsfig{file=fly.eps, height=1in, width=1in}
-\caption{A sample black and white graphic (.eps format)
-that has been resized with the \texttt{epsfig} command.}
-\end{figure}
-
-
-As was the case with tables, you may want a figure
-that spans two columns.  To do this, and still to
-ensure proper ``floating'' placement of tables, use the environment
-\textbf{figure*} to enclose the figure and its caption.
-
-Note that either {\textbf{.ps}} or {\textbf{.eps}} formats are
-used; use
-the \texttt{{\char'134}epsfig} or \texttt{{\char'134}psfig}
-commands as appropriate for the different file types.
-
-\begin{figure}
-\centering
-\psfig{file=rosette.ps, height=1in, width=1in,}
-\caption{A sample black and white graphic (.ps format) that has
-been resized with the \texttt{psfig} command.}
-\end{figure}
 
 \begin{figure*}
 \centering
@@ -328,6 +291,7 @@ been resized with the \texttt{psfig} command.}
 \caption{A sample black and white graphic (.eps format)
 that needs to span two columns of text.}
 \end{figure*}
+%ending with figure* is for images that span 2 cols 
  
 
 
