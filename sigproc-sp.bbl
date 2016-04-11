@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{navid:arp2}
+N.~Behboodian and S.~A. Razak.
+\newblock Arp poisoning attack detection and protection in wlan via client web
+  browser.
+\newblock pages 20--24, December 2011.
+
 \bibitem{bowman:reasoning}
 Bowman.
 
@@ -19,6 +25,13 @@ M.~Clark.
 M.~Herlihy.
 \newblock A methodology for implementing highly concurrent data objects.
 \newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):745--770, November 1993.
+
+\bibitem{goldendeep:arp3}
+G.~Kaur and J.~Malhotra.
+\newblock A review of latest techniques to secure wireless networks against arp
+  poisoning attacks.
+\newblock {\em International Journal of the Future Generation Communication and
+  Networking}, 8(2):225--232, 2015.
 
 \bibitem{Lamport:LaTeX}
 L.~Lamport.
