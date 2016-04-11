@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 16:20
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 17:51
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -312,43 +312,42 @@ osed
 
 (sigproc-sp.bbl
 Requested font "aeti9" at 9.0pt
-)
-LaTeX Font Info:    Try loading font information for T1+aett on input line 268.
-
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-Requested font "aett9" at 9.0pt
+) [3]
 Requested font "aeti7" at 6.0pt
 
-Overfull \hbox (7.91669pt too wide) in paragraph at lines 281--285
-\T1/aer/m/n/9 SIGS style spec-i-fi-ca-tions. No other ci-ta-tion for-mat is en-
-dorsed. 
- []
-
-
-Overfull \hbox (8.08696pt too wide) in paragraph at lines 287--298
+Overfull \hbox (8.08696pt too wide) in paragraph at lines 262--273
 \T1/aer/m/n/9 Because ta-bles can-not be split across pages, the best place-men
 t
  []
 
-[3]
-Overfull \hbox (7.98079pt too wide) in paragraph at lines 316--326
+
+Overfull \hbox (7.98079pt too wide) in paragraph at lines 291--301
 \T1/aer/m/n/9 ta-ble's con-tents and the ta-ble cap-tion. As with a single-colu
 mn
  []
 
-File: flies.eps Graphic file (type eps)
-<flies.eps> [4
+LaTeX Font Info:    Try loading font information for T1+aett on input line 308.
 
-] [5] (sigproc-sp.aux) ) 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Requested font "aett9" at 9.0pt
+File: flies.eps Graphic file (type eps)
+ <flies.eps>
+[4
+
+] [5] (sigproc-sp.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  1938 strings out of 428760
  20595 string characters out of 3163264
- 81567 words of memory out of 3000000
+ 80567 words of memory out of 3000000
  5250 multiletter control sequences out of 15000+200000
  41923 words of font info for 53 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 39i,10n,28p,409b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,10n,28p,409b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on sigproc-sp.pdf (5 pages).
