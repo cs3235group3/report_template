@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 10:48
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 11:06
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -194,7 +194,13 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )
 Requested font "aer9" at 9.0pt
-)) (sigproc-sp.aux)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyphenat\hyphenat.sty"
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language70
+LaTeX Info: Redefining \_ on input line 43.
+)
+(sigproc-sp.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
@@ -216,16 +222,14 @@ Requested font "cmex9" at 9.0pt
 Requested font "cmex7" at 6.0pt
 Requested font "cmex7" at 5.0pt
 LaTeX Font Info:    Try loading font information for U+msa on input line 95.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 Requested font "msam10" at 9.0pt
 Requested font "msam7" at 6.0pt
 Requested font "msam5" at 5.0pt
 LaTeX Font Info:    Try loading font information for U+msb on input line 95.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Requested font "msbm10" at 9.0pt
@@ -241,16 +245,23 @@ Requested font "lasy6" at 6.0pt
 Requested font "lasy5" at 5.0pt
 Requested font "aebx9" at 9.0pt
 
+Overfull \hbox (13.28226pt too wide) in paragraph at lines 117--123
+\T1/aer/m/n/9 dy-nam-i-cally through the use of the Dy-namic Host Con-fig-u-ra-
+tion
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 117--123
 
  []
 
 
-LaTeX Warning: Citation `vivek:arp' on page \thepage  undefined on input line 1
-40.
+Overfull \hbox (2.11116pt too wide) in paragraph at lines 126--128
+\T1/aer/m/n/9 1. ARP Re-quest: Al-ice's com-puter sends out an ARP re-quest
+ []
 
 
-Overfull \hbox (2.6681pt too wide) in paragraph at lines 140--141
+Overfull \hbox (2.6681pt too wide) in paragraph at lines 145--146
 \T1/aer/m/n/9 em-ploy pas-sive de-tec-tion, ker-nal based patches, mak-ing MAC
  []
 
@@ -258,7 +269,7 @@ Overfull \hbox (2.6681pt too wide) in paragraph at lines 140--141
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 169.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 177.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -266,51 +277,66 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 Requested font "aett9" at 9.0pt
 Requested font "aeti9" at 9.0pt
 Requested font "aeti7" at 6.0pt
+
+Overfull \hbox (7.91669pt too wide) in paragraph at lines 190--194
+\T1/aer/m/n/9 SIGS style spec-i-fi-ca-tions. No other ci-ta-tion for-mat is en-
+dorsed. 
+ []
+
+
+Overfull \hbox (8.08696pt too wide) in paragraph at lines 196--207
+\T1/aer/m/n/9 Because ta-bles can-not be split across pages, the best place-men
+t
+ []
+
+
+Overfull \hbox (7.98079pt too wide) in paragraph at lines 225--235
+\T1/aer/m/n/9 ta-ble's con-tents and the ta-ble cap-tion. As with a single-colu
+mn
+ []
+
 Requested font "aer6" at 6.0pt
 File: fly.eps Graphic file (type eps)
- <fly.eps>
-File: fly.eps Graphic file (type eps)
-
 <fly.eps>
+File: fly.eps Graphic file (type eps)
+ <fly.eps>
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 263.
+(Font)              using `T1/aett/m/n' instead on input line 271.
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 271--271
+\T1/aer/bx/n/9 for-mat) that has been re-sized with the \T1/aett/bx/n/9 eps-fig
+
+ []
+
+
+Overfull \hbox (3.73358pt too wide) in paragraph at lines 280--284
+[]\T1/aer/m/n/9 Note that ei-ther \T1/aer/bx/n/9 .ps \T1/aer/m/n/9 or \T1/aer/b
+x/n/9 .eps \T1/aer/m/n/9 for-mats are used; use the \T1/aett/bx/n/9 \eps-fig
+ []
 
 [2]
-\c@theorem=\count109
-
-Underfull \hbox (badness 1603) in paragraph at lines 287--291
-[]\T1/aer/m/n/9 This uses the \T1/aer/bx/n/9 the-o-rem \T1/aer/m/n/9 en-vi-ron-
-ment, cre-ated by the
- []
-
-Requested font "aecsc10" at 9.0pt
-\c@definition=\count110
 File: rosette.ps Graphic file (type eps)
-<rosette.ps>
-File: flies.eps Graphic file (type eps)
- <flies.eps>
-Overfull \hbox (15.60826pt too wide) detected at line 343
-\OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
-/m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
-m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^A [] [] \OT1/cmr/m/n/9 = 0 \OMS/cm
-sy/m/n/9 ^^A \OML/cmm/m/it/9 L \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 ;
+ <rosette.ps>
+Underfull \hbox (badness 1442) in paragraph at lines 289--289
+[]\T1/aer/bx/n/9 Figure 3: A sam-ple black and white graphic
  []
 
-(sigproc-sp.bbl) [3] [4] (sigproc-sp.aux)
+File: flies.eps Graphic file (type eps)
+<flies.eps> (sigproc-sp.bbl) [3
+
+] [4] (sigproc-sp.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 1921 strings out of 428760
- 20311 string characters out of 3163264
+ 1939 strings out of 428760
+ 20552 string characters out of 3163264
  82567 words of memory out of 3000000
- 5234 multiletter control sequences out of 15000+200000
- 45086 words of font info for 55 fonts, out of 3000000 for 9000
+ 5250 multiletter control sequences out of 15000+200000
+ 43426 words of font info for 54 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  39i,10n,28p,498b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
 

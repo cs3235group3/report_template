@@ -27,7 +27,7 @@
 % For tracking purposes - this is V3.1SP - APRIL 2009
 
 \documentclass{acm_proc_article-sp}
-
+\usepackage[none]{hyphenat}
 \begin{document}
 
 \title{Detecting and Combating ARP Spoofing}
@@ -94,14 +94,14 @@ Wu Wenqi\\
 }
 \maketitle
 \begin{abstract}
-Our project aims to create a program for users to detect if they are victims of ARP spoofing, and offer ways to protect themselves.
+Our project aims to create a program for users to actively detect if they are victims of ARP spoofing, and to offer ways to protect themselves.
 \end{abstract}
 
 % A category with the (minimum) three required fields
 \category{C.2.0}{Computer-Communication Networks}{General - Data Communications, Security and Protection}
 
 %A category including the fourth, optional field follows...
-\category{D.4.6}{Security and Protection}{Authentication, Verification}
+\category{D.4.6}{Security and Protection}{Authentication,\\ Verification}
 
 \terms{Network Security}
 
@@ -121,22 +121,27 @@ Firstly, in a typical computer, all IP addresses are resolved dynamically throug
 3. DHCP Request \\
 4. DHCP Ack \\ 
 
-After that, suppose the the user Alice wishes to send some information to Bob. The following steps are then carried out: \\
+After that, suppose the the user Alice wishes to send some information to Bob. The following steps are then carried out: 
+
 (to include picture) \\
-1. ARP Request: Alice's computer sends out an ARP request to find out which MAC address has Bob's IP. \\
+1. ARP Request: Alice's computer sends out an ARP request to find out which MAC address has Bob's IP. 
+
 (to include picture) \\
-2. When Bob's computer receives the request, he sends back an ARP response packet. \\
+2. When Bob's computer receives the request, he sends back an ARP response packet. 
+
 3. Alice gets the response and stores the corresponding IP-to-MAC entry into the ARP cache. 
 
 
 \subsection{Poisoning the ARP Cache}
 (to include picture) \\
-If an attacker, Eve, wishes to carry out an MITM attack on the ARP, this is typically what happens: \\
-1. Alice's computer sends out an ARP request to find out what is Bob's MAC address. \\
+If an attacker, Eve, wishes to carry out an MITM attack on the ARP, this is typically what happens: 
+
+1. Alice's computer sends out an ARP request to find out what is Bob's MAC address. 
+
 2. Before Bob's computer can reply, the attacker, Eve, sends a spam of packets to Alice's computer, claiming to be Bob. The ARP cache then becomes poisoned. 
 
 
-\section{Current Solutions}
+\section{Current Solutions and \\Mitigations}
 There are many solutions in the market to combat ARP Spoofing, such as Agnitum Outpost Firewall. However, from Vivek's\cite{vivek:arp} paper, we can see that many of these solutions employ passive detection, kernal based patches, making MAC entries static, or using a secure ARP protocol. 
 
 \section{Goals}
@@ -152,9 +157,12 @@ to insert stuff
 to insert stuff 
 
 \section{Limitations and Future Work}
-Our project has several flaws which we were unable to resolve within a reasonable timeframe: \\
-1. Our solution will not work on a network that employs WPA-Enterprise level of encryption. This is because the structure of WPA-Enterprise is such that only each user can see his incoming or outgoing network connections. \\
-2. Our solution assumes that the user does not have any form of defence installed on his computer. (eg. no firewall that can prevent ARP spoofing, a network that does not use any enterprise level encryption, etc.) \\
+Our project has several flaws which we were unable to resolve within a reasonable timeframe: 
+
+1. Our solution will not work on a network that employs WPA-Enterprise level of encryption. This is because the structure of WPA-Enterprise is such that only each user can see his incoming or outgoing network connections. 
+
+2. Our solution assumes that the user does not have any form of defence installed on his computer. (eg. no firewall that can prevent ARP spoofing, a network that does not use any enterprise level encryption, etc.) 
+
 We hope to improve our solution for a more varied set of systems in the future. 
 
 \subsection{Citations}
@@ -274,34 +282,6 @@ used; use
 the \texttt{{\char'134}epsfig} or \texttt{{\char'134}psfig}
 commands as appropriate for the different file types.
 
-\subsection{Theorem-like Constructs}
-Other common constructs that may occur in your article are
-the forms for logical constructs like theorems, axioms,
-corollaries and proofs.  There are
-two forms, one produced by the
-command \texttt{{\char'134}newtheorem} and the
-other by the command \texttt{{\char'134}newdef}; perhaps
-the clearest and easiest way to distinguish them is
-to compare the two in the output of this sample document:
-
-This uses the \textbf{theorem} environment, created by
-the\linebreak\texttt{{\char'134}newtheorem} command:
-\newtheorem{theorem}{Theorem}
-\begin{theorem}
-Let $f$ be continuous on $[a,b]$.  If $G$ is
-an antiderivative for $f$ on $[a,b]$, then
-\begin{displaymath}\int^b_af(t)dt = G(b) - G(a).\end{displaymath}
-\end{theorem}
-
-The other uses the \textbf{definition} environment, created
-by the \texttt{{\char'134}newdef} command:
-\newdef{definition}{Definition}
-\begin{definition}
-If $z$ is irrational, then by $e^z$ we mean the
-unique number which has
-logarithm $z$: \begin{displaymath}{\log e^z = z}\end{displaymath}
-\end{definition}
-
 \begin{figure}
 \centering
 \psfig{file=rosette.ps, height=1in, width=1in,}
@@ -309,51 +289,16 @@ logarithm $z$: \begin{displaymath}{\log e^z = z}\end{displaymath}
 been resized with the \texttt{psfig} command.}
 \end{figure}
 
-Two lists of constructs that use one of these
-forms is given in the
-\textit{Author's  Guidelines}.
-
 \begin{figure*}
 \centering
 \epsfig{file=flies.eps}
 \caption{A sample black and white graphic (.eps format)
 that needs to span two columns of text.}
 \end{figure*}
-and don't forget to end the environment with
-{figure*}, not {figure}!
  
-There is one other similar construct environment, which is
-already set up
-for you; i.e. you must \textit{not} use
-a \texttt{{\char'134}newdef} command to
-create it: the \textbf{proof} environment.  Here
-is a example of its use:
-\begin{proof}
-Suppose on the contrary there exists a real number $L$ such that
-\begin{displaymath}
-\lim_{x\rightarrow\infty} \frac{f(x)}{g(x)} = L.
-\end{displaymath}
-Then
-\begin{displaymath}
-l=\lim_{x\rightarrow c} f(x)
-= \lim_{x\rightarrow c}
-\left[ g{x} \cdot \frac{f(x)}{g(x)} \right ]
-= \lim_{x\rightarrow c} g(x) \cdot \lim_{x\rightarrow c}
-\frac{f(x)}{g(x)} = 0\cdot L = 0,
-\end{displaymath}
-which contradicts our assumption that $l\neq 0$.
-\end{proof}
 
-Complete rules about using these environments and using the
-two different creation commands are in the
-\textit{Author's Guide}; please consult it for more
-detailed instructions.  If you need to use another construct,
-not listed therein, which you want to have the same
-formatting as the Theorem
-or the Definition\cite{salas:calculus} shown above,
-use the \texttt{{\char'134}newtheorem} or the
-\texttt{{\char'134}newdef} command,
-respectively, to create it.
+
+
 
 \section{Conclusions}
 ARP spoofing is not easy to correct. etc... 
@@ -361,9 +306,11 @@ ARP spoofing is not easy to correct. etc...
 
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgments}
-First and foremost, we would like to thank Prof. Hugh Anderson for his guidance and patience with us throughout the semester. While our initial project was to investigate the hacking of Hello Barbie, we eventually decided to change the topic for various reasons, and he very kindly allowed us to do so. \\ 
-Our thanks also goes out to him for loaning us the Hello Barbie even though we eventually dropped the project. \\
-In addition, our appreciation also goes out to our friends who loaned us various items for our project, such as a DLink Dir-825 router, so that we could work on the project in school. 
+First and foremost, we would like to thank Prof. Hugh Anderson for his guidance and patience with us throughout the semester. While our initial project was to investigate the hacking of Hello Barbie, we eventually decided to change the topic for various reasons, and he very kindly allowed us to do so. 
+
+Our thanks also goes out to him for loaning us the Hello Barbie even though we eventually dropped the project. 
+
+In addition, our appreciation also goes out to our friends who loaned us various items for our project, such as a DLink Dir-825 router which runs on DD-RWT, so that we could work on the project in school. 
 
 %
 % The following two commands are all you need in the
