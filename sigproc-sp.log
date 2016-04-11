@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 09:54
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 10:48
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -240,38 +240,46 @@ Requested font "lasy9" at 9.0pt
 Requested font "lasy6" at 6.0pt
 Requested font "lasy5" at 5.0pt
 Requested font "aebx9" at 9.0pt
-Requested font "aeti9" at 9.0pt
-Requested font "aer6" at 6.0pt
-LaTeX Font Info:    Try loading font information for T1+aett on input line 128.
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--123
+
+ []
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-Requested font "aett9" at 9.0pt
+LaTeX Warning: Citation `vivek:arp' on page \thepage  undefined on input line 1
+40.
 
-Underfull \hbox (badness 1360) in paragraph at lines 128--128
-[][]\T1/aer/m/n/9 Two of these, the \T1/aett/m/n/9 \num-bero-fau-thors \T1/aer/
-m/n/9 and \T1/aett/m/n/9 \alig-nau-
+
+Overfull \hbox (2.6681pt too wide) in paragraph at lines 140--141
+\T1/aer/m/n/9 em-ploy pas-sive de-tec-tion, ker-nal based patches, mak-ing MAC
  []
 
 [1
 
 
 ]
+LaTeX Font Info:    Try loading font information for T1+aett on input line 169.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Requested font "aett9" at 9.0pt
+Requested font "aeti9" at 9.0pt
 Requested font "aeti7" at 6.0pt
+Requested font "aer6" at 6.0pt
 File: fly.eps Graphic file (type eps)
  <fly.eps>
 File: fly.eps Graphic file (type eps)
- <fly.eps>
+
+<fly.eps>
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 327.
+(Font)              using `T1/aett/m/n' instead on input line 263.
 
 [2]
 \c@theorem=\count109
 
-Underfull \hbox (badness 1603) in paragraph at lines 351--355
+Underfull \hbox (badness 1603) in paragraph at lines 287--291
 []\T1/aer/m/n/9 This uses the \T1/aer/bx/n/9 the-o-rem \T1/aer/m/n/9 en-vi-ron-
 ment, cre-ated by the
  []
@@ -282,27 +290,28 @@ File: rosette.ps Graphic file (type eps)
 <rosette.ps>
 File: flies.eps Graphic file (type eps)
  <flies.eps>
-Overfull \hbox (15.60826pt too wide) detected at line 407
+Overfull \hbox (15.60826pt too wide) detected at line 343
 \OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
 /m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
 m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^A [] [] \OT1/cmr/m/n/9 = 0 \OMS/cm
 sy/m/n/9 ^^A \OML/cmm/m/it/9 L \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 ;
  []
 
-[3] (sigproc-sp.bbl) [4
-
-] (sigproc-sp.aux)
+(sigproc-sp.bbl) [3] [4] (sigproc-sp.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 1919 strings out of 428760
- 20289 string characters out of 3163264
- 83567 words of memory out of 3000000
- 5232 multiletter control sequences out of 15000+200000
+ 1921 strings out of 428760
+ 20311 string characters out of 3163264
+ 82567 words of memory out of 3000000
+ 5234 multiletter control sequences out of 15000+200000
  45086 words of font info for 55 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 39i,10n,28p,323b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,10n,28p,498b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on sigproc-sp.pdf (4 pages).

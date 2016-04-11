@@ -25,6 +25,11 @@ L.~Lamport.
 \newblock {\em LaTeX User's Guide and Document Reference Manual}.
 \newblock Addison-Wesley Publishing Company, Reading, Massachusetts, 1986.
 
+\bibitem{vivek:arp}
+V.~Ramachandran and S.~Nandi.
+\newblock Detecting arp spoofing: An active technique.
+\newblock pages 1--13.
+
 \bibitem{salas:calculus}
 S.~Salas and E.~Hille.
 \newblock {\em Calculus: One and Several Variable}.

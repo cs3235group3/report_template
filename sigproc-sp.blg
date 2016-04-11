@@ -4,4 +4,6 @@ Database file #1: sigproc.bib
 Warning--empty title in bowman:reasoning
 Warning--empty journal in bowman:reasoning
 Warning--empty year in bowman:reasoning
-(There were 3 warnings)
+Warning--empty journal in vivek:arp
+Warning--empty year in vivek:arp
+(There were 5 warnings)
