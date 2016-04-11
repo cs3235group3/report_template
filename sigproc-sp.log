@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 15:13
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 15:49
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -274,6 +274,9 @@ File: ARP_Response.eps Graphic file (type eps)
  <ARP_Response.eps>
 File: Poisoned_ARP.eps Graphic file (type eps)
  <Poisoned_ARP.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (2.6681pt too wide) in paragraph at lines 169--170
 \T1/aer/m/n/9 em-ploy pas-sive de-tec-tion, ker-nal based patches, mak-ing MAC
  []
@@ -318,8 +321,11 @@ Overfull \hbox (7.98079pt too wide) in paragraph at lines 304--314
 mn
  []
 
+[3]
 File: flies.eps Graphic file (type eps)
-<flies.eps> [3] [4] (sigproc-sp.aux) ) 
+ <flies.eps> [4
+
+] [5] (sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
  1936 strings out of 428760
  20566 string characters out of 3163264
@@ -329,4 +335,4 @@ Here is how much of TeX's memory you used:
  1096 hyphenation exceptions out of 8191
  39i,10n,28p,409b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on sigproc-sp.pdf (4 pages).
+Output written on sigproc-sp.pdf (5 pages).

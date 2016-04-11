@@ -142,7 +142,7 @@ In a typical modern computer, all IP addresses are resolved dynamically through 
 3. DHCP Request \\
 4. DHCP Ack \\ 
 
-After that, suppose the the user Alice wishes to send some information to Bob. The following steps are then carried out: 
+After that, assuming everyone has already had their IPs assigned to them via DHCP, suppose the the user Alice wishes to send some information to Bob. The following steps are then carried out: 
 
 1. ARP Request: Alice's computer sends out an ARP request to find out which MAC address has Bob's IP. 
 
@@ -210,7 +210,7 @@ Our project has several flaws which we were unable to resolve within a reasonabl
 
 2. Our solution assumes that the user does not have any form of defence installed on his computer. (eg. no firewall that can prevent ARP spoofing, a network that does not use any enterprise level encryption, etc.) 
 
-3. The attacks have only been tested to work for various users across the wireless network. While it might work on a network that uses a hub, it might not be possible to find a user to spoof on a network that uses switches, unless a piece of hardware is attached to the victim computer's LAN port.  
+3. The attacks have only been tested to work for various users across the wireless network. While it might work on a network that uses a hub, it might not be possible to find a user to spoof on a network that uses switches, unless a wiretap is attached to the victim computer's LAN port.  
 
 We hope to improve our solution for a more varied set of systems in the future. 
 
