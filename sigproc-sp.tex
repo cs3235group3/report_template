@@ -94,7 +94,9 @@ Wu Wenqi\\
 }
 \maketitle
 \begin{abstract}
-Our project aims to create a program for users to actively detect if they are victims of ARP spoofing, and to offer ways to protect themselves.
+Since the early days of the computer, the ARP cache has been an easy target for ARP attacks like ARP spoofing. Even until today, it is still relatively easy to carry out an ARP spoofing attack, and it is difficult to defend against such attacks. 
+
+Thus, our project aims to create a program for users to actively detect if they are victims of ARP spoofing, and to offer alternative ways to protect themselves.
 \end{abstract}
 
 % A category with the (minimum) three required fields
@@ -103,18 +105,24 @@ Our project aims to create a program for users to actively detect if they are vi
 %A category including the fourth, optional field follows...
 \category{D.4.6}{Security and Protection}{Authentication,\\ Verification}
 
-\terms{Network Security}
+\terms{Network Security, Intrustion Detection System (IDS), \\
+Address Resolution Protocol (ARP), spoofing}
 
-\keywords{arp spoofing, network security} % NOT required for Proceedings
+\keywords{ARP spoofing, network security, DHCP resolution,
+IDS, ARP protection} % NOT required for Proceedings
 
 \section{Introduction}
-The Address Resolution Protocol (ARP) is an important protocol in Computer Network communications. However, it is also one of the easier protocols to spoof and carry out attacks on, because of the lack of viable solutions to protect the ARP cache. The most common form of attack on the ARP is a man-in-the-middle (MITM) attack, which we will be illustrating in Section 2. Some common programs which users can use to carry out such an attack include `Ettercap' and `Cain and Abel'. 
+The Address Resolution Protocol (ARP) is an important protocol in computer network communications. \\ Without this protocol, it would be difficult for computers to \\communicate with each other, because we would not know the MAC address of the computer we are communicating with. Thus, it would be difficult to establish an IP-to-MAC address mapping.
+
+However, it is also one of the easier protocols to carry out attacks on, because of the lack of viable solutions to protect the ARP cache. The most common form of attack on the ARP is a man-in-the-middle (MITM) attack, also known as ARP Spoofing, which we will be illustrating in Section 2. 
+
+Some common programs which users can use to carry out such an attack include `Ettercap' and `Cain and Abel'. As these programs are open source, almost anyone can easily carry out an ARP Spoofing attack with some basic technical knowledge. 
 
 \section{Background}
-In order to understand how ARP spoofing occurs, we will need to cover the basics on how computers communicate with each other. In this section, we will be explaining how computers do so, and introduce the basic notions of how an ARP spoofing is carried out. 
+In order to understand how ARP spoofing occurs, we will need to cover the basics on how computers communicate with each other. In this section, we will be explaining how computers do so, and introduce the basic notions of how an ARP spoof is carried out. 
 
 \subsection{Computer Communications}
-Firstly, in a typical computer, all IP addresses are resolved dynamically through the use of the Dynamic Host Configuration Protocol (DHCP). This is carried out in the following steps: \\
+Firstly, in a typical modern computer, all IP addresses are resolved dynamically through the use of the Dynamic Host \\Configuration Protocol (DHCP). This is carried out in the following steps: \\
 (to include picture) \\
 1. DHCP Discover \\
 2. DHCP Offer \\
@@ -144,16 +152,39 @@ If an attacker, Eve, wishes to carry out an MITM attack on the ARP, this is typi
 \section{Current Solutions and \\Mitigations}
 There are many solutions in the market to combat ARP Spoofing, such as Agnitum Outpost Firewall. However, from Vivek's\cite{vivek:arp} paper, we can see that many of these solutions employ passive detection, kernal based patches, making MAC entries static, or using a secure ARP protocol. 
 
+
+we can do some research and expand on this section. ref biblio if needed
+
 \section{Goals}
-In our project, we hope to achieve the following goal: \\
-1. To provide users with a means to actively combat ARP spoofing \\
-2. To make any network more secure. \\
+In taking up this project, we hoped to achieve the following goals: 
+
+1. Provide users with a means to actively combat ARP spoofing \\
+2. Make any network more secure. \\
 3. Provide a GUI for users to see what is happening in their network in real-time. 
 
 \section{Our Solution}
-to insert stuff
+\subsection{Implementation System}
+Operating System: \\
+OSX El Capitan, Arch-Linux [Manjaro 15.12 Capella]
 
-\section{Analysis}
+Software: \\
+Python 2.7 with the following libraries: scipy, scapy, \\matplotlib, \\ Ettercap \\ Wireshark
+\subsection{The Attacker}
+In our solution, we used Ettercap to stimulate an ARP Spoofing attack. 
+
+\subsection{The Defender Module}
+
+(ming xuan's code) 
+
+\subsection{The Spoof Detection Engine}
+
+(wenqi's code)
+
+\subsection{The GUI}
+
+to insert a picture once GUI is completed
+
+\section{Our solution versus current \\solutions}
 to insert stuff 
 
 \section{Limitations and Future Work}
@@ -302,17 +333,21 @@ that needs to span two columns of text.}
 
 
 
-\section{Conclusions}
-ARP spoofing is not easy to correct. etc... 
+\section{Conclusion}
+Through this project, we have learnt that ARP Spoofing is not easy to defend against. Even though there are solutions on the market that have been out for a while, unless one is using a network encrypted by WPA-Enterprise, it is otherwise easy to fall prey to such attacks. 
+
+Furthermore, as active detection of ARP spoofing is not widely implemented yet, our solution may not be entirely foolproof. Thus, we will need to put in more work to make the solution more viable for a wider variety of situations. 
+
+(to modify conclusion and include more stuff) 
 %\end{document}  % This is where a 'short' article might terminate
 
 %ACKNOWLEDGMENTS are optional
-\section{Acknowledgments}
-First and foremost, we would like to thank Prof. Hugh Anderson for his guidance and patience with us throughout the semester. While our initial project was to investigate the hacking of Hello Barbie, we eventually decided to change the topic for various reasons, and he very kindly allowed us to do so. 
+\section{Acknowledgements}
+First and foremost, we would like to thank Prof. Hugh Anderson for his guidance and patience with us throughout the semester. Our initial project was to investigate the hacking of Hello Barbie. However, we eventually decided to change the topic for various reasons, and he very kindly allowed us to do so. This is despite the topic being self-proposed and changed quite late in the semester. 
 
 Our thanks also goes out to him for loaning us the Hello Barbie even though we eventually dropped the project. 
 
-In addition, our appreciation also goes out to our friends who loaned us various items for our project, such as a DLink Dir-825 router which runs on DD-RWT, so that we could work on the project in school. 
+In addition, our appreciation also goes out to our friends who have loaned us various items for our project, such as a DLink Dir-825 router which runs on DD-RWT, so that we could work on the project in school. 
 
 %
 % The following two commands are all you need in the
