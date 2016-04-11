@@ -96,7 +96,7 @@ Wu Wenqi\\
 }
 \maketitle
 \begin{abstract}
-Since the early days of the computer, the ARP cache has been an easy target for ARP attacks like ARP spoofing. Even until today, it is still relatively easy to carry out an ARP spoofing attack, and it is difficult to defend against such attacks. 
+Since the early days of the computer, the ARP cache has been an easy target for ARP attacks like ARP spoofing. Even until today, it is still relatively easy to carry out an ARP spoofing attack, and remains rather difficult to defend against it. 
 
 Thus, our project aims to create a program for users to actively detect if they are victims of ARP spoofing, and to offer alternative ways to protect themselves.
 \end{abstract}
@@ -123,8 +123,19 @@ Some common programs which users can use to carry out such an attack include `Et
 \section{Background}
 In order to understand how ARP spoofing occurs, we will need to cover the basics on how computers communicate with each other. In this section, we will be explaining how computers do so, and introduce the basic notions of how an ARP spoof is carried out. 
 
+\subsection{The TCP/IP Model}
+In computer networking, the communication protocols are categorised and organised into different layers. In the TCP/IP Model, there are 5 layers: 
+
+1. Application Layer\\
+2. Transport Layer\\
+3. Internet Layer\\
+4. Link Layer\\
+5. Physical Layer\\
+
+DHCP is an application layer protocol and ARP is a link layer protocol.
+
 \subsection{Computer Communications}
-Firstly, in a typical modern computer, all IP addresses are resolved dynamically through the use of the Dynamic Host \\Configuration Protocol (DHCP). This is carried out in the following steps: \\
+In a typical modern computer, all IP addresses are resolved dynamically through the use of the Dynamic Host \\Configuration Protocol (DHCP). This is carried out in the following steps: \\
 (to include picture) \\
 1. DHCP Discover \\
 2. DHCP Offer \\

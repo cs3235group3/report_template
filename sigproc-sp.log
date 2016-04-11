@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 14:54
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 15:13
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -245,40 +245,47 @@ Requested font "lasy6" at 6.0pt
 Requested font "lasy5" at 5.0pt
 Requested font "aebx9" at 9.0pt
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--133
+Overfull \hbox (5.50629pt too wide) in paragraph at lines 127--128
+\T1/aer/m/n/9 cat-e-gorised and or-gan-ised into dif-fer-ent lay-ers. In the TC
+P/IP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--134
 
  []
 
 
-Overfull \hbox (2.11116pt too wide) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 138--144
+
+ []
+
+[1
+
+
+]
+Overfull \hbox (2.11116pt too wide) in paragraph at lines 147--148
 []\T1/aer/m/n/9 1. ARP Re-quest: Al-ice's com-puter sends out an ARP re-quest
  []
 
 File: ARP_Request.eps Graphic file (type eps)
 <ARP_Request.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
-
-
-]
 File: ARP_Response.eps Graphic file (type eps)
-
-<ARP_Response.eps>
+ <ARP_Response.eps>
 File: Poisoned_ARP.eps Graphic file (type eps)
  <Poisoned_ARP.eps>
-Overfull \hbox (2.6681pt too wide) in paragraph at lines 158--159
+Overfull \hbox (2.6681pt too wide) in paragraph at lines 169--170
 \T1/aer/m/n/9 em-ploy pas-sive de-tec-tion, ker-nal based patches, mak-ing MAC
  []
 
 [2]
-Overfull \hbox (3.60555pt too wide) in paragraph at lines 207--208
+Overfull \hbox (3.60555pt too wide) in paragraph at lines 218--219
 \T1/aer/m/n/9 us-ing a net-work en-crypted by WPA-Enterprise, it is oth-er-wise
 
  []
 
 
-Overfull \hbox (11.25653pt too wide) in paragraph at lines 216--217
+Overfull \hbox (11.25653pt too wide) in paragraph at lines 227--228
 \T1/aer/m/n/9 al-lowed us to do so. This is de-spite the topic be-ing self-prop
 osed
  []
@@ -286,7 +293,7 @@ osed
 (sigproc-sp.bbl
 Requested font "aeti9" at 9.0pt
 )
-LaTeX Font Info:    Try loading font information for T1+aett on input line 245.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 256.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -294,19 +301,19 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 Requested font "aett9" at 9.0pt
 Requested font "aeti7" at 6.0pt
 
-Overfull \hbox (7.91669pt too wide) in paragraph at lines 258--262
+Overfull \hbox (7.91669pt too wide) in paragraph at lines 269--273
 \T1/aer/m/n/9 SIGS style spec-i-fi-ca-tions. No other ci-ta-tion for-mat is en-
 dorsed. 
  []
 
 
-Overfull \hbox (8.08696pt too wide) in paragraph at lines 264--275
+Overfull \hbox (8.08696pt too wide) in paragraph at lines 275--286
 \T1/aer/m/n/9 Because ta-bles can-not be split across pages, the best place-men
 t
  []
 
 
-Overfull \hbox (7.98079pt too wide) in paragraph at lines 293--303
+Overfull \hbox (7.98079pt too wide) in paragraph at lines 304--314
 \T1/aer/m/n/9 ta-ble's con-tents and the ta-ble cap-tion. As with a single-colu
 mn
  []
