@@ -167,7 +167,7 @@ In taking up this project, we hoped to achieve the following goals:
 2. Make any network more secure. \\
 3. Provide a GUI for users to see what is happening in their network in real-time. 
 
-\section{Our Solution}
+\section{Proof of Concept}
 \subsection{Implementation System}
 Operating System: \\
 OSX El Capitan, Arch-Linux [Manjaro 15.12 Capella]
@@ -202,6 +202,36 @@ Our project has several flaws which we were unable to resolve within a reasonabl
 3. The attacks have only been tested to work for various users across the wireless network. While it might work on a network that uses a hub, it might not be possible to find a user to spoof on a network that uses switches, unless a piece of hardware is attached to the victim computer's LAN port.  
 
 We hope to improve our solution for a more varied set of systems in the future. 
+
+\section{Conclusion}
+Through this project, we have learnt that ARP Spoofing is not easy to defend against. Even though there are solutions on the market that have been out for a while, unless one is using a network encrypted by WPA-Enterprise, it is otherwise easy to fall prey to such attacks. 
+
+Furthermore, as active detection of ARP spoofing is not widely implemented yet, our solution may not be entirely foolproof. Thus, we will need to put in more work to make the solution more viable for a wider variety of situations. 
+
+(to modify conclusion and include more stuff) 
+%\end{document}  % This is where a 'short' article might terminate
+
+%ACKNOWLEDGMENTS are optional
+\section{Acknowledgements}
+First and foremost, we would like to thank Prof. Hugh Anderson for his guidance and patience with us throughout the semester. Our initial project was to investigate the hacking of Hello Barbie. However, we eventually decided to change the topic for various reasons, and he very kindly allowed us to do so. This is despite the topic being self-proposed and changed quite late in the semester. 
+
+Our thanks also goes out to him for loaning us the Hello Barbie even though we eventually dropped the project. 
+
+In addition, our appreciation also goes out to our friends who have loaned us various items for our project, such as a DLink Dir-825 router which runs on DD-RWT, so that we could work on the project in school. 
+
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
 
 \subsection{Citations}
 Citations to articles \cite{bowman:reasoning, clark:pct, braams:babel, herlihy:methodology},
@@ -295,35 +325,4 @@ that needs to span two columns of text.}
  
 
 
-
-
-\section{Conclusion}
-Through this project, we have learnt that ARP Spoofing is not easy to defend against. Even though there are solutions on the market that have been out for a while, unless one is using a network encrypted by WPA-Enterprise, it is otherwise easy to fall prey to such attacks. 
-
-Furthermore, as active detection of ARP spoofing is not widely implemented yet, our solution may not be entirely foolproof. Thus, we will need to put in more work to make the solution more viable for a wider variety of situations. 
-
-(to modify conclusion and include more stuff) 
-%\end{document}  % This is where a 'short' article might terminate
-
-%ACKNOWLEDGMENTS are optional
-\section{Acknowledgements}
-First and foremost, we would like to thank Prof. Hugh Anderson for his guidance and patience with us throughout the semester. Our initial project was to investigate the hacking of Hello Barbie. However, we eventually decided to change the topic for various reasons, and he very kindly allowed us to do so. This is despite the topic being self-proposed and changed quite late in the semester. 
-
-Our thanks also goes out to him for loaning us the Hello Barbie even though we eventually dropped the project. 
-
-In addition, our appreciation also goes out to our friends who have loaned us various items for our project, such as a DLink Dir-825 router which runs on DD-RWT, so that we could work on the project in school. 
-
-%
-% The following two commands are all you need in the
-% initial runs of your .tex file to
-% produce the bibliography for the citations in your paper.
-\bibliographystyle{abbrv}
-\bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
-% You must have a proper ".bib" file
-%  and remember to run:
-% latex bibtex latex latex
-% to resolve all references
-%
-% ACM needs 'a single self-contained file'!
-%
 \end{document}
