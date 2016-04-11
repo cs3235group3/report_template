@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 09:50
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  11 APR 2016 09:54
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -260,13 +260,8 @@ m/n/9 and \T1/aett/m/n/9 \alig-nau-
 
 ]
 Requested font "aeti7" at 6.0pt
-
-
-LaTeX Warning: Citation `bowman:reasoning' on page \thepage  undefined on input
- line 225.
-
 File: fly.eps Graphic file (type eps)
-<fly.eps>
+ <fly.eps>
 File: fly.eps Graphic file (type eps)
  <fly.eps>
 
@@ -294,12 +289,11 @@ m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^A [] [] \OT1/cmr/m/n/9 = 0 \OMS/cm
 sy/m/n/9 ^^A \OML/cmm/m/it/9 L \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 ;
  []
 
-[3] (sigproc-sp.bbl) [4] (sigproc-sp.aux)
+[3] (sigproc-sp.bbl) [4
+
+] (sigproc-sp.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
