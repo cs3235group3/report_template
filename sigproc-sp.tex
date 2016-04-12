@@ -241,11 +241,11 @@ In contrast to current available solutions, we tried to adopt an active method o
 \section{Limitations and Future Work}
 Our project has several flaws which we were unable to resolve within a reasonable timeframe: 
 
-1. Our solution will not work on a network that employs WPA-Enterprise level of encryption. This is because the structure of WPA-Enterprise is such that only each user can see his incoming or outgoing network connections. 
+1. Our solution will not work on a network that employs WPA-Enterprise level of encryption. This is because the structure of WPA-Enterprise is such that each user can only see his incoming or outgoing network connections. 
 
 2. Our solution assumes that the user does not have any form of defence installed on his computer. (eg. no firewall that can prevent ARP spoofing, a network that does not use any enterprise level encryption, etc.) 
 
-3. The attacks have only been tested to work for various users across the wireless network. While it might work on a network that uses a hub, it might not be possible to find a user to spoof on a network that uses switches, unless a wiretap is attached to the victim computer's LAN port.  
+3. The attacks have only been tested to work for various users across the wireless network which uses no encryption, WEP, WPA, and WPA2. While it might work on a network that uses a hub, it might require a wiretap for a switched network.  
 
 We hope to improve our solution for a more varied set of systems in the future. 
 
