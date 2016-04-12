@@ -98,7 +98,7 @@ Wu Wenqi\\
 \begin{abstract}
 Since the early days of the computer, the ARP cache has been an easy target for ARP attacks like ARP spoofing. Even until today, it is still relatively easy to carry out an ARP spoofing attack, and remains rather difficult to defend against it. 
 
-Thus, our project aims to create a program for users to actively detect if they are victims of ARP spoofing, and to offer alternative ways to protect themselves.
+Thus, our project aims to create a program for users to actively detect if they are victims of ARP spoofing, and to offer alternative ways to protect themselves over an unsecure network.
 \end{abstract}
 
 % A category with the (minimum) three required fields
@@ -116,11 +116,14 @@ IDS, ARP protection}
 \section{Introduction}
 The Address Resolution Protocol (ARP) is an important protocol in computer network communications. \\ Without this protocol, it would be difficult for computers to \\communicate with each other, because we would not know the MAC address of the computer we are communicating with. Thus, it would be difficult to establish an IP-to-MAC address mapping.
 
-However, it is also one of the easier protocols to carry out attacks on, because of the lack of viable solutions to protect the ARP cache. Some common attacks that can occur after an ARP Spoof are man-in-the-middle (MITM), Denial-of-\\Service (DOS), or even session hijacking. 
+However, it is also one of the easier protocols to spoof and carry out attacks on, because of the lack of viable solutions to protect the ARP cache. In fact, such attacks are easy to carry out over a wireless network if it is not protected by WPA-Enterprise encryption. Over a Local Area Network (LAN), such attacks require a wiretap if the network uses switches instead of hubs. 
+
+Some common attacks that can occur after an ARP Spoof are man-in-the-middle (MITM), Denial-of-Service (DOS), or even session hijacking. 
 In such cases, the security principles of Confidentiality, Integrity and Availability may be violated. 
 We will be illustrating how an ARP Spoof occurs in Section 2. 
 
 Some common programs which users can use to carry out such an attack include `Ettercap' and `Cain and Abel'. As these programs are open source, almost anyone can easily carry out ARP Spoofing with some basic technical knowledge. 
+
 
 \section{Background}
 In order to understand how ARP spoofing occurs, we will need to cover the basics on how computers communicate with each other. In this section, we will be explaining how computers do so, and introduce the basic notions of how an ARP spoof is carried out. 
@@ -213,6 +216,10 @@ OSX El Capitan, Arch-Linux [Manjaro 15.12 Capella]
 
 Software: \\
 Python 2.7 with the following libraries: scipy, scapy, \\matplotlib, tkinter, numpy \\ Ettercap \\ Wireshark
+
+\subsection{Overall Architecture}
+put a summary of the software system here.
+
 \subsection{The Attacker}
 In our solution, we used Ettercap to stimulate an ARP Spoofing attack. 
 
@@ -220,7 +227,7 @@ In our solution, we used Ettercap to stimulate an ARP Spoofing attack.
 
 (ming xuan's code) 
 
-\subsection{The Spoof Detection Engine}
+\subsection{The Spoof Detection Engine (IDS)}
 
 (wenqi's code)
 
