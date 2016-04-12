@@ -110,7 +110,7 @@ Thus, our project aims to create a program for users to actively detect if they 
 \terms{Network Security, Intrustion Detection System (IDS), \\
 Address Resolution Protocol (ARP), spoofing}
 
-\keywords{ARP spoofing, network security, DHCP resolution,
+\keywords{ARP spoofing, ARP Poisoning, network security, attack, MITM,
 IDS, ARP protection}
 
 \section{Introduction}
@@ -177,7 +177,9 @@ After that, assuming everyone has already had their IPs assigned to them via DHC
 
 
 \subsection{Poisoning the ARP Cache}
-If an attacker, Eve, wishes to carry out an MITM attack on the ARP, this is typically what happens: 
+There are 3 main ways to poison the ARP cache. The first is to send a broadcast request, the second is to send multiple responses, and the third is an unsolicited response. In this paper, we will only cover the second method as it is more commonly used.
+
+If an attacker, Eve, wishes to carry out ARP spoofing, this is typically what happens: 
 
 1. Alice's computer sends out an ARP request to find out what is Bob's MAC address. 
 
@@ -185,21 +187,25 @@ If an attacker, Eve, wishes to carry out an MITM attack on the ARP, this is typi
 
 \includegraphics[width=3in]{Poisoned_ARP.eps}
 
+In this case, there is a race condition between Eve and Bob to send a response to Alice. If Eve succeeds in responding to Alice before Bob can do so, Alice's ARP cache becomes successfully poisoned. 
 
 \section{Current Solutions and \\Mitigations}
 There are currently many solutions in the market to combat ARP Spoofing. However, many of these solutions are described to have major issues. From \cite{vivek:arp}, \cite{navid:arp2} and \cite{goldendeep:arp3},  these are the summaries and drawbacks of current implementations in the market:
 
 1. Use of Cryptographic Techniques \\
-Examples: S-ARP 
+Examples: S-ARP \\
+This method suggests that the ARP protocol be redesigned with cryptographic measures in place. However, implementing such cryptographic measures severely degrades the runtime performance of the ARP protocol. 
 
 2. Passive Detection \\
-Examples: Agnitum Outpost Firewall
+Examples: Agnitum Outpost Firewall\\
+Such methods only detect ARP spoofing but are unable to do anything to correct it. 
 
 3. Kernel-based patches\\
-Examples: Anticap, Antidote 
+Examples: Anticap, Antidote \\
+A patch is given to fix the OS Kernel. However, this may cause compatibility issues. 
 
-4. Making MAC entries static\\ 
-
+4. Making ARP entries static\\ 
+In this method, ARP entries are configured to be static. In this case, DHCP will not be used to resolve local IP addresses for a computer. However, it will not be very user-friendly for standard office workers to configure, and will be very difficult for network administrators to manage IP-to-MAC mappings in a huge company. 
 
 
 \section{Goals}

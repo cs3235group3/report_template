@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  12 APR 2016 09:49
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  12 APR 2016 12:48
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -296,46 +296,47 @@ File: ARP_Response.eps Graphic file (type eps)
 
 <ARP_Response.eps>
 File: Poisoned_ARP.eps Graphic file (type eps)
- <Poisoned_ARP.eps>
-Overfull \hbox (8.31126pt too wide) in paragraph at lines 190--191
+ <Poisoned_ARP.eps> [2]
+Overfull \hbox (8.31126pt too wide) in paragraph at lines 193--194
 \T1/aer/m/n/9 ARP Spoof-ing. How-ever, many of these so-lu-tions are de-scribed
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
+Overfull \hbox (6.71053pt too wide) in paragraph at lines 195--198
+\T1/aer/m/n/9 with cryp-to-graphic mea-sures in place. How-ever, im-ple-ment-in
+g
  []
 
 
-Overfull \hbox (3.60555pt too wide) in paragraph at lines 253--254
+Overfull \hbox (3.60555pt too wide) in paragraph at lines 259--260
 \T1/aer/m/n/9 us-ing a net-work en-crypted by WPA-Enterprise, it is oth-er-wise
 
  []
 
 
-Overfull \hbox (11.25653pt too wide) in paragraph at lines 262--263
+Overfull \hbox (11.25653pt too wide) in paragraph at lines 268--269
 \T1/aer/m/n/9 al-lowed us to do so. This is de-spite the topic be-ing self-prop
 osed
  []
 
-(sigproc-sp.bbl
+[3] (sigproc-sp.bbl
 Requested font "aeti9" at 9.0pt
- [3])
+)
 Requested font "aeti7" at 6.0pt
 
-Overfull \hbox (8.08696pt too wide) in paragraph at lines 285--296
+Overfull \hbox (8.08696pt too wide) in paragraph at lines 291--302
 \T1/aer/m/n/9 Because ta-bles can-not be split across pages, the best place-men
 t
  []
 
 
-Overfull \hbox (7.98079pt too wide) in paragraph at lines 314--324
+Overfull \hbox (7.98079pt too wide) in paragraph at lines 320--330
 \T1/aer/m/n/9 ta-ble's con-tents and the ta-ble cap-tion. As with a single-colu
 mn
  []
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 331.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 337.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
