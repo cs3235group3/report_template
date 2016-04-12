@@ -138,11 +138,27 @@ DHCP is an application layer protocol and ARP is a link layer protocol.
 
 \subsection{Computer Communications}
 In a typical modern computer, all IP addresses are resolved dynamically through the use of the Dynamic Host \\Configuration Protocol (DHCP). This is carried out in the following steps: \\
-(to include picture) \\
-1. DHCP Discover \\
-2. DHCP Offer \\
-3. DHCP Request \\
-4. DHCP Ack \\ 
+
+1. DHCP Discover: \\
+The new host broadcasts a DHCP discover message, where 255.255.255.255 is a typical broadcast address.  
+
+\includegraphics[width=3in]{DHCP_Discover.eps}
+
+2. DHCP Offer: \\
+The DHCP server responds with a DHCP offer. 
+
+\includegraphics[width=3in]{DHCP_Offer.eps}
+
+3. DHCP Request: \\
+The host selects from the offers and sends a DHCP request. 
+
+\includegraphics[width=3in]{DHCP_Request.eps}
+
+4. DHCP ACK: \\ 
+The DHCP Server confirms the requested parameters. 
+
+\includegraphics[width=3in]{DHCP_Ack.eps}
+
 
 After that, assuming everyone has already had their IPs assigned to them via DHCP, suppose the the user Alice wishes to send some information to Bob. The following steps are then carried out: 
 
@@ -168,7 +184,7 @@ If an attacker, Eve, wishes to carry out an MITM attack on the ARP, this is typi
 
 
 \section{Current Solutions and \\Mitigations}
-There are many solutions in the market to combat ARP Spoofing, such as Agnitum Outpost Firewall. However, many of these solutions are described to have major issues. From \cite{vivek:arp}, \cite{navid:arp2} and \cite{goldendeep:arp3},  these are the summaries and drawbacks of current implementations in the market:
+There are currently many solutions in the market to combat ARP Spoofing. However, many of these solutions are described to have major issues. From \cite{vivek:arp}, \cite{navid:arp2} and \cite{goldendeep:arp3},  these are the summaries and drawbacks of current implementations in the market:
 
 1. Use of Cryptographic Techniques \\
 Examples: S-ARP 
@@ -196,7 +212,7 @@ Operating System: \\
 OSX El Capitan, Arch-Linux [Manjaro 15.12 Capella]
 
 Software: \\
-Python 2.7 with the following libraries: scipy, scapy, \\matplotlib, \\ Ettercap \\ Wireshark
+Python 2.7 with the following libraries: scipy, scapy, \\matplotlib, tkinter, numpy \\ Ettercap \\ Wireshark
 \subsection{The Attacker}
 In our solution, we used Ettercap to stimulate an ARP Spoofing attack. 
 
@@ -213,7 +229,7 @@ In our solution, we used Ettercap to stimulate an ARP Spoofing attack.
 to insert a picture once GUI is completed
 
 \section{Our solution versus current \\solutions}
-to insert stuff 
+In contrast to current available solutions, we tried to adopt an active method of detecting ARP spoofing. 
 
 \section{Limitations and Future Work}
 Our project has several flaws which we were unable to resolve within a reasonable timeframe: 
