@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  12 APR 2016 12:48
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  12 APR 2016 13:02
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -267,76 +267,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--139
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
 [1
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
 File: DHCP_Discover.eps Graphic file (type eps)
- <DHCP_Discover.eps>
+<DHCP_Discover.eps>
 File: DHCP_Offer.eps Graphic file (type eps)
  <DHCP_Offer.eps>
 File: DHCP_Request.eps Graphic file (type eps)
  <DHCP_Request.eps>
 File: DHCP_Ack.eps Graphic file (type eps)
  <DHCP_Ack.eps>
-Overfull \hbox (2.11116pt too wide) in paragraph at lines 168--169
+Overfull \hbox (2.11116pt too wide) in paragraph at lines 179--180
 []\T1/aer/m/n/9 1. ARP Re-quest: Al-ice's com-puter sends out an ARP re-quest
  []
 
 File: ARP_Request.eps Graphic file (type eps)
 <ARP_Request.eps>
+File: ARP_Response.eps Graphic file (type eps)
+ <ARP_Response.eps>
+File: Poisoned_ARP.eps Graphic file (type eps)
+ <Poisoned_ARP.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-File: ARP_Response.eps Graphic file (type eps)
-
-<ARP_Response.eps>
-File: Poisoned_ARP.eps Graphic file (type eps)
- <Poisoned_ARP.eps> [2]
-Overfull \hbox (8.31126pt too wide) in paragraph at lines 193--194
+ [2]
+Overfull \hbox (8.31126pt too wide) in paragraph at lines 204--205
 \T1/aer/m/n/9 ARP Spoof-ing. How-ever, many of these so-lu-tions are de-scribed
 
  []
 
 
-Overfull \hbox (6.71053pt too wide) in paragraph at lines 195--198
+Overfull \hbox (6.71053pt too wide) in paragraph at lines 206--209
 \T1/aer/m/n/9 with cryp-to-graphic mea-sures in place. How-ever, im-ple-ment-in
 g
  []
 
-
-Overfull \hbox (3.60555pt too wide) in paragraph at lines 259--260
+[3]
+Overfull \hbox (3.60555pt too wide) in paragraph at lines 279--280
 \T1/aer/m/n/9 us-ing a net-work en-crypted by WPA-Enterprise, it is oth-er-wise
 
  []
 
 
-Overfull \hbox (11.25653pt too wide) in paragraph at lines 268--269
+Overfull \hbox (11.25653pt too wide) in paragraph at lines 288--289
 \T1/aer/m/n/9 al-lowed us to do so. This is de-spite the topic be-ing self-prop
 osed
  []
 
-[3] (sigproc-sp.bbl
+(sigproc-sp.bbl
 Requested font "aeti9" at 9.0pt
 )
 Requested font "aeti7" at 6.0pt
 
-Overfull \hbox (8.08696pt too wide) in paragraph at lines 291--302
+Overfull \hbox (8.08696pt too wide) in paragraph at lines 311--322
 \T1/aer/m/n/9 Because ta-bles can-not be split across pages, the best place-men
 t
  []
 
 
-Overfull \hbox (7.98079pt too wide) in paragraph at lines 320--330
+Overfull \hbox (7.98079pt too wide) in paragraph at lines 340--350
 \T1/aer/m/n/9 ta-ble's con-tents and the ta-ble cap-tion. As with a single-colu
 mn
  []
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 337.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 357.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -348,7 +347,7 @@ File: flies.eps Graphic file (type eps)
 Here is how much of TeX's memory you used:
  1940 strings out of 428760
  20618 string characters out of 3163264
- 80567 words of memory out of 3000000
+ 81567 words of memory out of 3000000
  5248 multiletter control sequences out of 15000+200000
  41923 words of font info for 53 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191

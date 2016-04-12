@@ -128,8 +128,8 @@ Some common programs which users can use to carry out such an attack include `Et
 \section{Background}
 In order to understand how ARP spoofing occurs, we will need to cover the basics on how computers communicate with each other. In this section, we will be explaining how computers do so, and introduce the basic notions of how an ARP spoof is carried out. 
 
-\subsection{The TCP/IP Model}
-In computer networking, the communication protocols are categorised and organised into different layers. In the TCP/IP Model, there are 5 layers: 
+\subsection{Models and Abstractions}
+In computer networking, the communication protocols are categorised and organised into different layers. In the TCP/IP Model, there are 5 layers of abstraction: 
 
 1. Application Layer\\
 2. Transport Layer\\
@@ -138,6 +138,18 @@ In computer networking, the communication protocols are categorised and organise
 5. Physical Layer\\
 
 DHCP is an application layer protocol and ARP is a link layer protocol.
+
+In the OSI Model, there are 7 layers of abstraction:
+
+7. Application Layer \\
+6. Presentation Layer \\
+5. Session Layer \\
+4. Transport Layer \\
+3. Network Layer \\
+2. Data Link Layer \\
+1. Physical Layer 
+
+(show picture of comparison between both models?) 
 
 \subsection{Computer Communications}
 In a typical modern computer, all IP addresses are resolved dynamically through the use of the Dynamic Host \\Configuration Protocol (DHCP). This is carried out in the following steps: \\
@@ -222,6 +234,15 @@ OSX El Capitan, Arch-Linux [Manjaro 15.12 Capella]
 
 Software: \\
 Python 2.7 with the following libraries: scipy, scapy, \\matplotlib, tkinter, numpy \\ Ettercap \\ Wireshark
+
+\subsection{Assumptions}
+1. Attacker's computer has a normal network stack. 
+
+2. Victim computer has at least one TCP port open.
+
+3. All devices have a TCP/IP network stack up and running.
+
+4. Attacker only modifies his data in the Ethernet layer. If he modifies his data in the Network layer as well, then we would not be able to determine who the attacker is, although we can detect that it is an ARP spoof based on the volume of packets sent. 
 
 \subsection{Overall Architecture}
 put a summary of the software system here.
