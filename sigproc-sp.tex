@@ -96,11 +96,13 @@ Wu Wenqi\\
 }
 \maketitle
 \begin{abstract}
-In light of the 'Sparkle Vulnerability'\footnote{https://sparkle-project.org/documentation/security/} incident that occurred earlier this year, our team has been particularly interested in preventing man-in-the-middle (MITM) attacks. We realised that such attacks are easy to carry out and are quite common as well. Eventually, we decided to generalise and focus our project on preventing ARP Spoofing. By doing so, it would reduce the chances of an attacker being able to carry out such MITM attacks. 
+In light of the 'Sparkle Vulnerability'\footnote{https://sparkle-project.org/documentation/security/} incident that occurred earlier this year, our team has been particularly interested in preventing man-in-the-middle (MITM) attacks. We realised that such attacks are easy to carry out, especially if one can carry out either ARP spoofing or DHCP spoofing. Thus, we decided to generalise and focus our project on preventing ARP Spoofing. By doing so, it would reduce the chances of an attacker being able to carry out such MITM attacks. 
 
 Since the early days of the computer, the ARP cache has been an easy target for ARP attacks like ARP spoofing. Even until today, it is still relatively easy to carry out an ARP spoof, and it remains rather difficult to defend against it. 
 
-Thus, our project aims to create a program for users to actively detect if they are victims of ARP spoofing, and to offer alternative ways to protect themselves over an unsecure network.
+Therefore, our project aims to create a program for users to actively detect if they are victims of ARP spoofing, and to offer alternative ways to protect themselves over an unsecure network. 
+
+In addition, we hope to extend this project to cover DHCP spoofing in the future. 
 \end{abstract}
 
 % A category with the (minimum) three required fields
@@ -193,7 +195,9 @@ After that, assuming everyone has already had their IPs assigned to them via DHC
 
 
 \subsection{Poisoning the ARP Cache}
-There are 3 main ways to poison the ARP cache. The first is to send a broadcast request, the second is to send multiple responses, and the third is an unsolicited response. In this paper, we will only cover the second method as it is more commonly used.
+For ARP spoofing to work, the attacker typically has to be in the same network as his victim\cite{blackhat:arp5}. Sniffing is carried out to first determine the victim's IP address on the network. This can be done using a network sniffer such as Wireshark.  
+
+There are 3 common ways to poison the ARP cache. The first is to send a broadcast request, the second is to send multiple responses, and the third is an unsolicited response. In this paper, we will only cover the second method\cite{wagner:arp4}.
 
 If an attacker, Eve, wishes to carry out ARP spoofing, this is typically what happens: 
 
@@ -280,6 +284,8 @@ Our project has several flaws which we were unable to resolve within a reasonabl
 
 We hope to improve our solution for a more varied set of systems in the future. Furthermore, if we are able to tell who our attacker is, we hope to implement a more aggressive method to counter their ARP attacks, such as spoofing them back. 
 
+In addition, this project could be extended to prevent DHCP Spoofing from the local to remote network, by implementing DHCP Snooping. 
+
 \section{Conclusion}
 Through this project, we have learnt that ARP Spoofing is not easy to defend against. Even though there are solutions on the market that have been out for a while, unless one is using a network encrypted by WPA-Enterprise, it is otherwise easy to fall prey to such attacks. 
 
@@ -290,7 +296,7 @@ Furthermore, as active detection of ARP spoofing is not widely implemented yet, 
 
 %ACKNOWLEDGMENTS are optional
 \section{Acknowledgements}
-First and foremost, we would like to thank Prof. Hugh Anderson for his guidance and patience with us throughout the semester. Our initial project was to investigate the hacking of Hello Barbie. However, we eventually decided to change the topic for various reasons, and he very kindly allowed us to do so. This is despite the topic being self-proposed and changed quite late in the semester. 
+First and foremost, we would like to thank Prof. Hugh Anderson for his guidance and patience with us throughout the semester. Our initial project was to investigate the hacking of Hello Barbie. However, we eventually decided to change the topic for various reasons, and he very kindly allowed us to do so. This is despite the topic being changed quite late in the semester, and on top of it, was self-proposed. 
 
 Our thanks also goes out to him for loaning us the Hello Barbie even though we eventually dropped the project. 
 
