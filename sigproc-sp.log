@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  14 APR 2016 23:25
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  14 APR 2016 23:27
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -357,6 +357,6 @@ Here is how much of TeX's memory you used:
  5252 multiletter control sequences out of 15000+200000
  43426 words of font info for 54 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 39i,10n,28p,528b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,10n,28p,523b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on sigproc-sp.pdf (6 pages).
