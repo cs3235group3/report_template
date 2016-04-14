@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  14 APR 2016 23:22
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  14 APR 2016 23:25
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -248,12 +248,6 @@ Requested font "aebx9" at 9.0pt
 
 Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
- []
-
-
-Overfull \hbox (12.85759pt too wide) in paragraph at lines 119--121
-\T1/aer/m/n/9 In or-der to com-mu-ni-cate with an-other com-puter, your com-put
-er
  []
 
 
