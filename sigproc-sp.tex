@@ -96,11 +96,9 @@ Wu Wenqi\\
 }
 \maketitle
 \begin{abstract}
-In light of the 'Sparkle Vulnerability'\footnote{https://sparkle-project.org/documentation/security/} incident that occurred earlier this year, our team has been particularly interested in preventing man-in-the-middle (MITM) attacks. We realised that such attacks are easy to carry out, especially if one can carry out either ARP spoofing or DHCP spoofing. Thus, we decided to generalise and focus our project on preventing ARP Spoofing. By doing so, it would reduce the chances of an attacker being able to carry out such MITM attacks. 
+In light of the 'Sparkle Vulnerability'\footnote{https://sparkle-project.org/documentation/security/} incident that occurred early in 2016, our team has been particularly interested in preventing Man-In-The-Middle (MITM) attacks.  These attacks are easy to perform if one is able to carry out either ARP spoofing or DHCP spoofing. Therefore, our research focuses on techniques to circumvent ARP Spoofing. By doing so, it would reduce the chances of an attacker being able to carry out MITM attacks. 
 
-Since the early days of the computer, the ARP cache has been an easy target for ARP attacks like ARP spoofing. Even until today, it is still relatively easy to carry out an ARP spoof, and it remains rather difficult to defend against it. 
-
-Therefore, our project aims to create a program for users to actively detect if they are victims of ARP spoofing, and to offer alternative ways to protect themselves over an unsecure network. 
+Therefore, we hope to create a program for users to actively detect if they are victims of ARP spoofing, and offer them alternative methods to protect themselves over an unsecure network. 
 
 In addition, we hope to extend this project to cover DHCP spoofing in the future. 
 \end{abstract}
@@ -115,12 +113,14 @@ In addition, we hope to extend this project to cover DHCP spoofing in the future
 Address Resolution Protocol (ARP), spoofing}
 
 \keywords{ARP spoofing, ARP Poisoning, network security, attack, MITM,
-IDS, ARP protection}
+IDS, ARP protection\\} 
 
 \section{Introduction}
 The Address Resolution Protocol (ARP) is an important protocol in computer network communications. \\ Without this protocol, it would be difficult for computers to \\communicate with each other, because we would not know the MAC address of the computer we are communicating with. Thus, it would be difficult to establish an IP-to-MAC address mapping.
 
-However, it is also one of the easier protocols to spoof and carry out attacks on, because of the lack of viable solutions to protect the ARP cache. In fact, such attacks are easy to carry out over a wireless network if it is not protected by WPA-Enterprise encryption. Over a Local Area Network (LAN), such attacks require a wiretap if the network uses switches instead of hubs. 
+Since the early days of the computer, the ARP cache has been an easy target for ARP attacks like ARP spoofing. Even until today, it is still relatively easy to carry out an ARP spoof, and it remains rather difficult to defend against it. 
+
+Ther is a lack of viable solutions to protect the ARP cache because of the way it is designed. In fact, ARP spoofing is easy to carry out over a wireless network if it is not protected by WPA-Enterprise encryption. Over a Local Area Network (LAN), such attacks require a wiretap if the network uses switches instead of hubs. 
 
 Some common attacks that can occur after an ARP Spoof are man-in-the-middle (MITM), Denial-of-Service (DOS), or even session hijacking. 
 In such cases, the security principles of Confidentiality, Integrity and Availability may be violated. 
