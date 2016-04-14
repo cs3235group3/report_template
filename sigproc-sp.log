@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  14 APR 2016 23:27
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  14 APR 2016 23:37
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -200,19 +200,42 @@ Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language70
 LaTeX Info: Redefining \_ on input line 43.
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip44
+\RaggedLeftLeftskip=\skip45
+\RaggedRightLeftskip=\skip46
+\CenteringRightskip=\skip47
+\RaggedLeftRightskip=\skip48
+\RaggedRightRightskip=\skip49
+\CenteringParfillskip=\skip50
+\RaggedLeftParfillskip=\skip51
+\RaggedRightParfillskip=\skip52
+\JustifyingParfillskip=\skip53
+\CenteringParindent=\skip54
+\RaggedLeftParindent=\skip55
+\RaggedRightParindent=\skip56
+\JustifyingParindent=\skip57
+)
 (sigproc-sp.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 34.
 Requested font "cmr6" at 6.0pt
 Requested font "cmmi9" at 9.0pt
 Requested font "cmmi6" at 6.0pt
@@ -221,21 +244,23 @@ Requested font "cmsy6" at 6.0pt
 Requested font "cmex9" at 9.0pt
 Requested font "cmex7" at 6.0pt
 Requested font "cmex7" at 5.0pt
-LaTeX Font Info:    Try loading font information for U+msa on input line 97.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 Requested font "msam10" at 9.0pt
 Requested font "msam7" at 6.0pt
 Requested font "msam5" at 5.0pt
-LaTeX Font Info:    Try loading font information for U+msb on input line 97.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+LaTeX Font Info:    Try loading font information for U+msb on input line 98.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Requested font "msbm10" at 9.0pt
 Requested font "msbm7" at 6.0pt
 Requested font "msbm5" at 5.0pt
-LaTeX Font Info:    Try loading font information for U+lasy on input line 97.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 98.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -246,18 +271,18 @@ Requested font "lasy5" at 5.0pt
 Requested font "aer6" at 6.0pt
 Requested font "aebx9" at 9.0pt
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
  []
 
 
-Overfull \hbox (12.4862pt too wide) in paragraph at lines 126--129
+Overfull \hbox (12.4862pt too wide) in paragraph at lines 127--130
 \T1/aer/m/n/9 In such cases, the se-cu-rity prin-ci-ples of Con-fi-den-tial-ity
 , In-tegrity
  []
 
 
-Overfull \hbox (3.40836pt too wide) in paragraph at lines 130--131
+Overfull \hbox (3.40836pt too wide) in paragraph at lines 131--132
 \T1/aer/m/n/9 carry out ARP Spoof-ing with some ba-sic tech-ni-cal knowl-edge. 
 
  []
@@ -266,13 +291,13 @@ Overfull \hbox (3.40836pt too wide) in paragraph at lines 130--131
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 141--146
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
 
  []
 
 File: osi_comparison.eps Graphic file (type eps)
 <osi_comparison.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
@@ -287,7 +312,7 @@ File: DHCP_Request.eps Graphic file (type eps)
 <DHCP_Request.eps>
 File: DHCP_Ack.eps Graphic file (type eps)
  <DHCP_Ack.eps>
-Overfull \hbox (2.11116pt too wide) in paragraph at lines 187--188
+Overfull \hbox (2.11116pt too wide) in paragraph at lines 188--189
 []\T1/aer/m/n/9 1. ARP Re-quest: Al-ice's com-puter sends out an ARP re-quest
  []
 
@@ -301,24 +326,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Poisoned_ARP.eps Graphic file (type eps)
 
 <Poisoned_ARP.eps>
-Overfull \hbox (8.31126pt too wide) in paragraph at lines 214--215
+Overfull \hbox (8.31126pt too wide) in paragraph at lines 215--216
 \T1/aer/m/n/9 ARP Spoof-ing. How-ever, many of these so-lu-tions are de-scribed
 
  []
 
 
-Overfull \hbox (6.71053pt too wide) in paragraph at lines 216--219
+Overfull \hbox (6.71053pt too wide) in paragraph at lines 217--220
 \T1/aer/m/n/9 with cryp-to-graphic mea-sures in place. How-ever, im-ple-ment-in
 g
  []
 
 
-Overfull \hbox (1.41057pt too wide) in paragraph at lines 220--223
+Overfull \hbox (1.41057pt too wide) in paragraph at lines 221--224
 \T1/aer/m/n/9 database is used for com-par-ing with an in-com-ing ARP packet
  []
 
 [3]
-Overfull \hbox (3.60555pt too wide) in paragraph at lines 294--295
+Overfull \hbox (3.60555pt too wide) in paragraph at lines 295--296
 \T1/aer/m/n/9 us-ing a net-work en-crypted by WPA-Enterprise, it is oth-er-wise
 
  []
@@ -328,18 +353,18 @@ Requested font "aeti9" at 9.0pt
 ) [4]
 Requested font "aeti7" at 6.0pt
 
-Overfull \hbox (8.08696pt too wide) in paragraph at lines 326--337
+Overfull \hbox (8.08696pt too wide) in paragraph at lines 327--338
 \T1/aer/m/n/9 Because ta-bles can-not be split across pages, the best place-men
 t
  []
 
 
-Overfull \hbox (7.98079pt too wide) in paragraph at lines 355--365
+Overfull \hbox (7.98079pt too wide) in paragraph at lines 356--366
 \T1/aer/m/n/9 ta-ble's con-tents and the ta-ble cap-tion. As with a single-colu
 mn
  []
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 372.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 373.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -351,10 +376,10 @@ File: flies.eps Graphic file (type eps)
 
 ] [6] (sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 1946 strings out of 428760
- 20698 string characters out of 3163264
- 80567 words of memory out of 3000000
- 5252 multiletter control sequences out of 15000+200000
+ 2023 strings out of 428760
+ 22188 string characters out of 3163264
+ 80956 words of memory out of 3000000
+ 5323 multiletter control sequences out of 15000+200000
  43426 words of font info for 54 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  39i,10n,28p,523b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
