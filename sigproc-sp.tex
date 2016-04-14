@@ -116,13 +116,14 @@ Address Resolution Protocol (ARP), spoofing}
 IDS, ARP protection\\} 
 
 \section{Introduction}
-The Address Resolution Protocol (ARP) is an important protocol in computer network communications. \\ Without this protocol, it would be difficult for computers to \\communicate with each other, because we would not know the MAC address of the computer we are communicating with. Thus, it would be difficult to establish an IP-to-MAC address mapping.
+The Address Resolution Protocol (ARP) is an important protocol in computer network communications. \\
+In order to communicate with another computer, your computer will need to know two things - the IP and MAC address of the other computer. As IP addresses can be resolved using a DNS lookup, the ARP is used to determine the MAC address of the other computer given an IP address. Without the ARP, it would be difficult for computers to communicate with each other, as an IP-to-MAC address mapping needs to be established. 
 
-Since the early days of the computer, the ARP cache has been an easy target for ARP attacks like ARP spoofing. Even until today, it is still relatively easy to carry out an ARP spoof, and it remains rather difficult to defend against it. 
+Traditionally, the ARP cache has been an easy target for ARP attacks like ARP spoofing. Even until today, it is still relatively easy to carry out an ARP spoof, and it remains rather difficult to defend against it. 
 
-Ther is a lack of viable solutions to protect the ARP cache because of the way it is designed. In fact, ARP spoofing is easy to carry out over a wireless network if it is not protected by WPA-Enterprise encryption. Over a Local Area Network (LAN), such attacks require a wiretap if the network uses switches instead of hubs. 
+There is a lack of viable solutions to protect the ARP cache because of the way it is designed. In fact, ARP spoofing is easy to carry out over a wireless network if it is not protected by WPA-Enterprise encryption. Over a Local Area Network (LAN), such attacks require a wiretap if the network uses switches instead of hubs. 
 
-Some common attacks that can occur after an ARP Spoof are man-in-the-middle (MITM), Denial-of-Service (DOS), or even session hijacking. 
+Some common attacks that can occur after an ARP Spoof are MITM, Denial-of-Service (DOS) and session hijacking. 
 In such cases, the security principles of Confidentiality, Integrity and Availability may be violated. 
 We will be illustrating how an ARP Spoof occurs in Section 2. 
 
@@ -276,11 +277,14 @@ In contrast to current available solutions, we tried to adopt an active method o
 \section{Limitations and Future Work}
 Our project has several flaws which we were unable to resolve within a reasonable timeframe: 
 
-1. Our solution will not work on a network that employs WPA-Enterprise level of encryption. This is because the structure of WPA-Enterprise is such that each user can only see his incoming or outgoing network connections. 
+1. No support for network encrypted with WPA-Enterprise:\\
+Our solution will not work on a network that uses\\ WPA-Enterprise level of encryption. This is because the structure of WPA-Enterprise is such that each user can only see his incoming or outgoing network connections. 
 
-2. Our solution assumes that the user does not have any form of defence installed on his computer. (eg. no firewall that can prevent ARP spoofing, a network that does not use any enterprise level encryption, etc.) 
+2. Assumes the user is on an insecure network: \\
+Our solution assumes that the user does not have any form of defence installed on his computer. (eg. no firewall that can prevent ARP spoofing, a network that does not use any enterprise level encryption, etc.) However, it is more likely that users have at least some kind of basic protection system on his computer. 
 
-3. The attacks have only been tested to work for various users across the wireless network which uses no encryption, WEP, WPA, and WPA2. While it might work on a network that uses a hub, it might require a wiretap for a switched network.  
+3. Only tested on wireless networks:\\
+The attacks have only been tested to work for various users across the wireless network which uses no encryption, WEP, WPA, and WPA2. While it might work on a network that uses a hub, it might require a wiretap for a switched network.  
 
 We hope to improve our solution for a more varied set of systems in the future. Furthermore, if we are able to tell who our attacker is, we hope to implement a more aggressive method to counter their ARP attacks, such as spoofing them back. 
 
