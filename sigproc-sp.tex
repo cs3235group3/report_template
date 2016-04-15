@@ -211,7 +211,12 @@ If an attacker, Eve, wishes to carry out ARP spoofing, this is typically what ha
 In this case, there is a race condition between Eve and Bob to send a response to Alice. If Eve succeeds in responding to Alice before Bob can do so, Alice's ARP cache becomes successfully poisoned. 
 
 \subsection{DHCP Spoofing}
-to insert stuff
+In DHCP spoofing, there is a race condition between the rouge server and the legitimate server to respond to a user's DHCP Discover broadcast. 
+Should the rouge server respond to the user first, the user then becomes subjected to an MITM attack. 
+
+(to add image) 
+
+The solution to this problem is to implement DHCP snooping. 
 
 \section{Current Solutions and \\Mitigations}
 There are currently many solutions in the market to combat ARP Spoofing. However, many of these solutions are described to have major issues. From \cite{vivek:arp}, \cite{navid:arp2} and \cite{goldendeep:arp3},  these are the summaries and drawbacks of current implementations in the market:
@@ -275,18 +280,20 @@ In our solution, we used Ettercap to stimulate an ARP Spoofing attack.
 to insert a picture once GUI is completed
 
 \section{Our solution versus current \\solutions}
-In contrast to current available solutions, we tried to adopt an active method of detecting ARP spoofing. 
+In contrast to current available solutions, we tried to adopt an active method of detecting ARP spoofing, and avoid the weaknesses of current solutions.  
+
+(to expand on this solution) 
 
 \section{Limitations and Future Work}
 Our project has several issues which can be improved on, but were left out due to lack of time: 
 
-1. No support for network encrypted with WPA-Enterprise:\\
+1. No Support for Network Encrypted with WPA-Enterprise:\\
 Our solution will not work on a network that uses\\ WPA-Enterprise level of encryption. This is because the structure of WPA-Enterprise is such that each user can only see his incoming or outgoing network connections. 
 
-2. Assumes the user is on an insecure network: \\
+2. Assumes the user is on an Insecure Network: \\
 Our solution assumes that the user does not have any form of defence installed on his computer. (eg. no firewall that can prevent ARP spoofing, a network that does not use any enterprise level encryption, etc.) However, it is more likely that users have at least some kind of basic protection system on his computer. 
 
-3. Only tested on wireless networks:\\
+3. Tested Only on Wireless Networks:\\
 The attacks have only been tested to work for various users across the wireless network which uses no encryption, WEP, WPA, and WPA2. While it might work on a network that uses a hub, it might require a wiretap for a switched network.  
 
 We hope to improve our solution for a more varied set of systems in the future. Furthermore, if we are able to tell who our attacker is, we hope to implement a more aggressive method to counter their ARP attacks, such as spoofing them back. 
@@ -305,7 +312,7 @@ First and foremost, we would like to thank Prof. Hugh Anderson for his guidance 
 
 Our thanks also goes out to him for loaning us the Hello Barbie even though we eventually dropped the project. 
 
-In addition, our appreciation also goes out to our friends who have loaned us various items for our project, such as a DLink Dir-825 router which runs on DD-RWT, so that we could work on the project in school. 
+In addition, our appreciation also goes out to our friends who have given us technical advice, as well as loaned us various items for our project, such as a DLink Dir-825 router which runs on DD-RWT, so that we could work on the project in school. 
 
 %
 % The following two commands are all you need in the

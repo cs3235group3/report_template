@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  15 APR 2016 18:15
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  15 APR 2016 18:47
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -314,24 +314,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Poisoned_ARP.eps Graphic file (type eps)
 
 <Poisoned_ARP.eps>
-Overfull \hbox (8.31126pt too wide) in paragraph at lines 217--218
+Overfull \hbox (4.27257pt too wide) in paragraph at lines 219--220
+[]\T1/aer/m/n/9 The so-lu-tion to this prob-lem is to im-ple-ment DHCP snoop-in
+g. 
+ []
+
+
+Overfull \hbox (8.31126pt too wide) in paragraph at lines 222--223
 \T1/aer/m/n/9 ARP Spoof-ing. How-ever, many of these so-lu-tions are de-scribed
 
  []
 
 
-Overfull \hbox (6.71053pt too wide) in paragraph at lines 219--222
+Overfull \hbox (6.71053pt too wide) in paragraph at lines 224--227
 \T1/aer/m/n/9 with cryp-to-graphic mea-sures in place. How-ever, im-ple-ment-in
 g
  []
 
 
-Overfull \hbox (1.41057pt too wide) in paragraph at lines 223--226
+Overfull \hbox (1.41057pt too wide) in paragraph at lines 228--231
 \T1/aer/m/n/9 database is used for com-par-ing with an in-com-ing ARP packet
  []
 
 [3]
-Overfull \hbox (3.60555pt too wide) in paragraph at lines 295--296
+Overfull \hbox (1.49234pt too wide) in paragraph at lines 290--292
+[]\T1/aer/m/n/9 1. No Sup-port for Net-work En-crypted with WPA-Enterprise: 
+ []
+
+
+Overfull \hbox (3.60555pt too wide) in paragraph at lines 302--303
 \T1/aer/m/n/9 us-ing a net-work en-crypted by WPA-Enterprise, it is oth-er-wise
 
  []
@@ -341,18 +352,18 @@ Requested font "aeti9" at 9.0pt
 ) [4]
 Requested font "aeti7" at 6.0pt
 
-Overfull \hbox (8.08696pt too wide) in paragraph at lines 327--338
+Overfull \hbox (8.08696pt too wide) in paragraph at lines 334--345
 \T1/aer/m/n/9 Because ta-bles can-not be split across pages, the best place-men
 t
  []
 
 
-Overfull \hbox (7.98079pt too wide) in paragraph at lines 356--366
+Overfull \hbox (7.98079pt too wide) in paragraph at lines 363--373
 \T1/aer/m/n/9 ta-ble's con-tents and the ta-ble cap-tion. As with a single-colu
 mn
  []
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 373.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 380.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
