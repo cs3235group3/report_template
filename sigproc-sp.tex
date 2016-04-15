@@ -97,11 +97,10 @@ Wu Wenqi\\
 }
 \maketitle
 \begin{abstract}
-In light of the 'Sparkle Vulnerability'\footnote{https://sparkle-project.org/documentation/security/} incident that occurred early in 2016, our team has been particularly interested in preventing Man-In-The-Middle (MITM) attacks.  These attacks are easy to perform if one is able to carry out either ARP spoofing or DHCP spoofing. Thus, our research focuses on techniques to circumvent ARP Spoofing. By doing so, it would reduce the chances of an attacker being able to carry out MITM attacks. 
+In light of the `Sparkle Vulnerability'\footnote{https://sparkle-project.org/documentation/security/} incident that occurred early in 2016, our team has been particularly interested in preventing Man-In-The-Middle (MITM) attacks.  These attacks are easy to perform if one is able to carry out either ARP spoofing or DHCP spoofing. Thus, our research focuses on techniques to circumvent ARP and DHCP Spoofing. By doing so, it would reduce the chances of an attacker being able to carry out MITM attacks. 
 
-Therefore, we hoped to create a program for users to actively detect if they are victims of ARP spoofing, and offer them alternative methods to protect themselves over an unsecure network. 
-
-In addition, we hope to extend this project to cover DHCP spoofing in the future. 
+Therefore, we hoped to create a program for users to actively detect if they are victims of DHCP and/or ARP spoofing, and offer them alternative methods to protect themselves over an unsecure network. 
+ 
 \end{abstract}
 
 % A category with the (minimum) three required fields
@@ -211,6 +210,9 @@ If an attacker, Eve, wishes to carry out ARP spoofing, this is typically what ha
 
 In this case, there is a race condition between Eve and Bob to send a response to Alice. If Eve succeeds in responding to Alice before Bob can do so, Alice's ARP cache becomes successfully poisoned. 
 
+\subsection{DHCP Spoofing}
+to insert stuff
+
 \section{Current Solutions and \\Mitigations}
 There are currently many solutions in the market to combat ARP Spoofing. However, many of these solutions are described to have major issues. From \cite{vivek:arp}, \cite{navid:arp2} and \cite{goldendeep:arp3},  these are the summaries and drawbacks of current implementations in the market:
 
@@ -288,8 +290,6 @@ Our solution assumes that the user does not have any form of defence installed o
 The attacks have only been tested to work for various users across the wireless network which uses no encryption, WEP, WPA, and WPA2. While it might work on a network that uses a hub, it might require a wiretap for a switched network.  
 
 We hope to improve our solution for a more varied set of systems in the future. Furthermore, if we are able to tell who our attacker is, we hope to implement a more aggressive method to counter their ARP attacks, such as spoofing them back. 
-
-In addition, this project could be extended to prevent DHCP Spoofing from the local to remote network, by implementing DHCP Snooping. 
 
 \section{Conclusion}
 Through this project, we have learnt that ARP Spoofing is not easy to defend against. Even though there are solutions on the market that have been out for a while, unless one is using a network encrypted by WPA-Enterprise, it is otherwise easy to fall prey to such attacks. 

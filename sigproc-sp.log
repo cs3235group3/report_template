@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  15 APR 2016 17:49
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  15 APR 2016 18:03
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -271,7 +271,7 @@ Requested font "lasy5" at 5.0pt
 Requested font "aer6" at 6.0pt
 Requested font "aebx9" at 9.0pt
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
@@ -279,13 +279,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 142--147
+Underfull \hbox (badness 10000) in paragraph at lines 141--146
 
  []
 
 File: osi_comparison.eps Graphic file (type eps)
 <osi_comparison.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
@@ -293,14 +293,14 @@ File: DHCP_Discover.eps Graphic file (type eps)
 <DHCP_Discover.eps>
 File: DHCP_Offer.eps Graphic file (type eps)
  <DHCP_Offer.eps>
-Underfull \vbox (badness 5077) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: DHCP_Request.eps Graphic file (type eps)
 
 <DHCP_Request.eps>
 File: DHCP_Ack.eps Graphic file (type eps)
  <DHCP_Ack.eps>
-Overfull \hbox (2.11116pt too wide) in paragraph at lines 188--189
+Overfull \hbox (2.11116pt too wide) in paragraph at lines 187--188
 []\T1/aer/m/n/9 1. ARP Re-quest: Al-ice's com-puter sends out an ARP re-quest
  []
 
@@ -314,19 +314,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Poisoned_ARP.eps Graphic file (type eps)
 
 <Poisoned_ARP.eps>
-Overfull \hbox (8.31126pt too wide) in paragraph at lines 215--216
+Overfull \hbox (8.31126pt too wide) in paragraph at lines 217--218
 \T1/aer/m/n/9 ARP Spoof-ing. How-ever, many of these so-lu-tions are de-scribed
 
  []
 
 
-Overfull \hbox (6.71053pt too wide) in paragraph at lines 217--220
+Overfull \hbox (6.71053pt too wide) in paragraph at lines 219--222
 \T1/aer/m/n/9 with cryp-to-graphic mea-sures in place. How-ever, im-ple-ment-in
 g
  []
 
 
-Overfull \hbox (1.41057pt too wide) in paragraph at lines 221--224
+Overfull \hbox (1.41057pt too wide) in paragraph at lines 223--226
 \T1/aer/m/n/9 database is used for com-par-ing with an in-com-ing ARP packet
  []
 
@@ -370,6 +370,6 @@ Here is how much of TeX's memory you used:
  5324 multiletter control sequences out of 15000+200000
  43426 words of font info for 54 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 39i,10n,28p,523b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,10n,28p,532b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on sigproc-sp.pdf (6 pages).
