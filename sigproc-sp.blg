@@ -1,9 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sigproc-sp.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
-Warning--empty journal in navid:arp2
-Warning--empty journal in blackhat:arp5
-Warning--empty journal in vivek:arp
+Warning--empty booktitle in navid:arp2
+Warning--empty booktitle in blackhat:arp5
+Warning--empty booktitle in vivek:arp
 Warning--empty year in vivek:arp
-Warning--empty journal in wagner:arp4
+Warning--empty booktitle in wagner:arp4
 (There were 5 warnings)

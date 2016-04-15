@@ -125,10 +125,10 @@ Traditionally, the ARP cache has been an easy target for ARP attacks like ARP sp
 There is a lack of viable solutions to protect the ARP cache because of the way it is designed. In fact, ARP spoofing is easy to carry out over a wireless network if it is not protected by WPA-Enterprise encryption. Over a Local Area Network (LAN), such attacks require a wiretap if the network uses switches instead of hubs. 
 
 Some common attacks that can occur after an ARP Spoof are MITM, Denial-of-Service (DOS) and session hijacking. 
-In such cases, the security principles of Confidentiality, Integrity and Availability may be violated. 
+In such cases, the three basic principles of security -\\ Confidentiality, Integrity and Availability - may be violated. 
 We will be illustrating how an ARP Spoof occurs in Section 2. 
 
-Some common programs which users can use to carry out such an attack include `Ettercap' and `Cain and Abel'. As these programs are open source, almost anyone can easily carry out ARP Spoofing with some basic technical knowledge. 
+Programs which users can use to carry out such an attack include but are not limited to, `Ettercap' and `Cain and Abel'. As these programs are open source, almost anyone can easily carry out ARP Spoofing with some basic technical knowledge. 
 
 
 \section{Background}
@@ -160,7 +160,7 @@ In the OSI Model, there are 7 layers of abstraction:
 \includegraphics[width=2.7in]{osi_comparison.eps}
 
 \subsection{Computer Communications}
-In a typical modern computer, all IP addresses are resolved dynamically through the use of the Dynamic Host \\Configuration Protocol (DHCP). This is carried out in the following steps: \\
+In a typical modern computer, all IP addresses are resolved dynamically through the use of the Dynamic Host \\Configuration Protocol (DHCP). This is carried out in the following steps\cite{kurose:networking}: \\
 
 1. DHCP Discover: \\
 The new host broadcasts a DHCP discover message, where 255.255.255.255 is a typical broadcast address.  
