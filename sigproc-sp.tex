@@ -30,6 +30,7 @@
 \usepackage[none]{hyphenat}
 \usepackage{ragged2e}
 \usepackage{graphicx}
+\usepackage{array}
 
 \begin{document}
 
@@ -97,9 +98,12 @@ Wu Wenqi\\
 }
 \maketitle
 \begin{abstract}
-In light of the `Sparkle Vulnerability'\footnote{https://sparkle-project.org/documentation/security/} incident that occurred early in 2016, our team has been particularly interested in preventing Man-In-The-Middle (MITM) attacks.  These attacks are easy to perform if one is able to carry out either ARP spoofing or DHCP spoofing. Thus, our research focuses on techniques to circumvent ARP and DHCP Spoofing. By doing so, it would reduce the chances of an attacker being able to carry out MITM attacks. 
+In light of the `Sparkle Vulnerability'\footnote{https://sparkle-project.org/documentation/security/} incident that occurred early in 2016, our team has been particularly interested in preventing Man-In-The-Middle (MITM) attacks, since that is one of its primary attack vectors. 
 
-Therefore, we hoped to create a program for users to actively detect if they are victims of DHCP and/or ARP spoofing, and offer them alternative methods to protect themselves over an unsecure network. 
+While internet security has generally increased over the past few years, there has been little improvements made to low-level protocols on the Link and Physical layers of the Open Systems Interconnection (OSI) model. Protocols such as Address Resolution Protocol (ARP) are still stateless, making them vulnerable to attacks. While solutions such as Secure ARP (S-ARP) exist, adoption of such solutions remain slow due to their incompatibility with existing protocols. The vulnerability in both ARP and DHCP makes carrying out MITM attacks via ARP spoofing or DHCP spoofing trivial. 
+
+Thus, our research focuses on a solution to detect and prevent ARP and DHCP Spoofing while maintaining compatibility with existing protocols. This will greatly limit the MITM attack variants an attacker can consider. 
+
  
 \end{abstract}
 
@@ -109,7 +113,7 @@ Therefore, we hoped to create a program for users to actively detect if they are
 %A category including the fourth, optional field follows...
 \category{D.4.6}{Security and Protection}{Authentication,\\ Verification}
 
-\terms{Network Security, Intrustion Detection System (IDS), \\
+\terms{Network Security, Intrusion Detection System (IDS), \\
 Address Resolution Protocol (ARP), spoofing}
 
 \keywords{ARP spoofing, ARP Poisoning, network security, attack, MITM,
@@ -127,7 +131,7 @@ Some common attacks that can occur after an ARP Spoof are MITM, Denial-of-Servic
 In such cases, the three basic principles of security -\\ Confidentiality, Integrity and Availability - may be violated. 
 We will be illustrating how an ARP Spoof occurs in Section 2. 
 
-Programs which users can use to carry out such an attack include but are not limited to, `Ettercap' and `Cain and Abel'. As these programs are open source, almost anyone can easily carry out ARP Spoofing with some basic technical knowledge. 
+Programs which users can use to carry out such an attack include but are not limited to, `Ettercap' and `Cain and Abel'. As these programs are open source and well documented, almost anyone can easily carry out ARP Spoofing with some basic technical knowledge. 
 
 
 \section{Background}
@@ -249,43 +253,126 @@ In taking up this project, we hoped to achieve the following goals:
 Operating System: \\
 OSX El Capitan, Arch-Linux [Manjaro 15.12 Capella]
 
-Software Used and Programming Language: \\
-Python 2.7 with the following libraries: scipy, scapy, \\matplotlib, tkinter, numpy \\ Ettercap \\ Wireshark
+We created a software product called `Spoof Alert' to monitor the computer's network traffic and alert the user should there be any suspicious packets that hint at ARP or DHCP spoofing. Spoof Alert is implemented using Python 2.7 with scapy and tkinter as the main library dependencies.
 
 \subsection{Assumptions}
+
+There are many variants of ARP spoofing. In order to deliver a focused solution, we have made certain assumptions about our environment. Most of these assumptions are still likely hold in actual cases.
+
 1. Attacker's computer has a normal network stack. 
 
-2. Victim computer has at least one TCP port open.
+2. All computers on the network have at least one TCP port open, since our solution requires computers to reply to TCP/SYN packets.
 
-3. All devices have a TCP/IP network stack up and running.
+3. All computers on the network have a TCP/IP network stack up and running. 
 
-4. Attacker only modifies his data in the Ethernet layer. If he modifies his data in the Network layer as well, then we would not be able to determine who the attacker is, although we can detect that it is an ARP spoof based on the volume of packets sent. 
+4. The attacker will only ARP spoof an existing IP address. He will not spoof IP addresses which have not yet been issued by the DHCP server. 
+
+5. At the start up of our application, the ARP cache of all computers are valid and no attacks should be taking place.
+
 
 \subsection{Overall Architecture}
-put a summary of the software system here.
+Spoof Alert's architecture shown in Figure 5.1. 
+
+\includegraphics[width=3in]{architecture01.png} \\
+Figure 5.1: High level view of Spoof Alert's architecture.
+
+The sniffer runs on a separate thread from the main application and sniffs and filters out ARP and DHCP packets which are present in the network. Any packets the sniffer captures will be passed to a defender module (currently we have two such modules implemented), depending on the type of the packet. The defender module does a thorough inspection of any received packet (further elaborated in section 5.5). 
+
+In future implementations, additional defender modules can be added to defend against a wider range of MITM attacks.
 
 \subsection{The Attacker}
-In our solution, we used Ettercap to stimulate an ARP Spoofing attack. 
+
+As we wanted to focus solely on developing the solution, we used Ettercap to test the performance of our software instead of writing our own attacker.  
 
 \subsection{The Defender Module}
 
-(ming xuan's code) 
+As of now, the ARP Defender and DHCP Defender modules have been implemented for Spoof Alert.
 
-\subsection{The Spoof Detection Engine (IDS)}
+\subsubsection{ARP Defender module}
 
-(wenqi's code)
+Upon receiving an ARP packet that is captured by the sniffer, the ARP Defender first checks that the packet's ARP header MAC and IP addresses for sender are consistent with that of its Ethernet headers. If there is a mismatch in headers, we conclude that the packet is invalid, and an ARP spoofing attack is potentially taking place.
+
+If the headers match, we proceed to check if the packet is consistent with the entries in our ARP table, i.e. there is an entry in the ARP table which has the same sender IP and MAC addresses as the packet. If so, the packet is deemed to be a valid one, with the assumption that our ARP table has not been poisoned.
+
+If the packet is inconsistent with the ARP table, Spoof Alert will perform an active check by sending a TCP SYN packet to the sender's IP address as stated in the packet. If there is a reply, we can assume the packet to be valid. Otherwise, it will be classified as a spoof packet.
+A summary of the ARP defender’s process flow is shown in Figure 5.2.
+
+\includegraphics[width=3in]{architecture02.png} \\
+Figure 5.2: Process flow of the ARP defender on receiving a packet.
+
+\subsubsection{DHCP Defender module}
+
+The DHCP Defender seeks to detect the presence of rogue DHCP servers in the network. While DHCP snooping allows the sending of DHCP offers by servers connected to a trusted port, this is only possible in a switched network. 
+
+To allow detection of rogue servers in a wireless environment, Spoof Alert requires the valid DHCP servers in the network to have their IP and MAC address added its white-list. This requires the DHCP servers to have reserved static IP addresses in the network. Any computer that is not on the white-list but sends a DHCP offer will be treated as a rogue DHCP server. 
 
 \subsection{The GUI}
 
-to insert a picture once GUI is completed
+Spoof Alert's view is split into several tabs. Below are some screenshots of our early prototype.
+
+\includegraphics[width=3in]{architecture03.png} \\
+Figure 5.3: In the Sniffer tab, the user can start the sniffer for Spoof Alert. All packets captured by the sniffer will be displayed here. Upon the detection of a suspicious packet, the user will be prompted by the application.
+
+\includegraphics[width=3in]{architecture04.png} \\
+Figure 5.4: In the ARP tab, the user can view the current entries in his computer’s ARP cache.
+
+\includegraphics[width=3in]{architecture05.png} \\
+Figure 5.5: In the DHCP servers tab, the user can add or remove DHCP servers from the white-list. If users wish to remove servers, they can only clear the entire list of servers. 
 
 \section{Our solution versus current \\solutions}
 In contrast to current available solutions, we tried to adopt an active method of detecting ARP spoofing, and avoid the weaknesses of current solutions.  
 
-(to expand on this solution) 
+1. Secure ARP\\
+Secure ARP (S-ARP) is an extension to the current ARP that allows authentication of ARP replies. However, this requires an additional header field to be added to the ARP packet and the network has to be modified to run authentication checks of S-ARP packets in order for this protocol to be supported. \\
+Spoof Alert can be run from multiple client machines in the network and does not require any additional support.
+
+2. arpwatch \\
+arpwatch is a computer software tool used to monitor ARP packets in a network. Upon detecting that a MAC-IP address pairing has changed, arpwatch will send an email to the administrator as an alert to possible ARP spoof attack. This may result in false positives in an environment where IP addresses are assigned dynamically. \\
+Upon detecting that a pairing has changed, Spoof Alert does not sound off the alarm immediately but sends a TCP SYN packet to the sender. If a response is given, it can be assumed that the packet is valid.
+
+3. Static ARP \\ 
+Static ARP will prevent all variants of ARP spoofing. However, this does not scale well in an large environment and gratuitous packets may not be supported by the network.
+
+\section{Performance}
+We tested the performance of our implementation using the Python library Scapy. The results are presented in Figure 7.1.
+
+\begin{tabular}{ |m{15em}|m{7em}| }
+\hline 
+Experiment Parameters & Outcome \\
+\hline 
+ ARP response packet with inconsistent sender IP and MAC addresses in ARP and Ethernet headers & ARP spoof alert \\ 
+\hline
+ ARP response packet with consistent headers that is consistent with the ARP table &  Valid \\  
+\hline
+ ARP response packet with consistent headers that is inconsistent with the ARP table & ARP spoof alert \\
+\hline
+DHCP offer packet from white-listed computer & Valid \\
+\hline
+DHCP offer packet from non-white listed computer & DHCP spoof alert \\
+\hline      
+\end{tabular}
+
 
 \section{Limitations and Future Work}
-Our project has several issues which can be improved on, but were left out due to lack of time: 
+Our project has several issues which can be improved on.
+
+\subsection{Limitations}
+Currently, our tool only sniffs the network but does not prevent the addition of spoofed ARP pairings to the computer’s local ARP cache. If the attacker sets up a server on his attacking machine that responds to TCP SYN packets, it will bypass our detection system.
+
+\subsection{Future Work: GUI}
+1. A sleeker and more minimalistic UI will be implemented.
+
+2. Support for removal of a single DHCP server entry from white-list.
+
+3. Support the add-on of custom defender modules as well as allowing the user to control the packets to capture.
+
+4. Come up with a less intrusive way of alerting the user of possible spoof attacks in the network.
+
+5. Prevent the addition of spoofed ARP pairings to the computer’s local ARP cache
+
+6. Various UI Bug fixes
+
+\subsection{Future Work: Backend Code}
 
 1. No Support for Network Encrypted with WPA-Enterprise:\\
 Our solution will not work on a network that uses\\ WPA-Enterprise level of encryption. This is because the structure of WPA-Enterprise is such that each user can only see his incoming or outgoing network connections. 
@@ -326,73 +413,7 @@ In addition, our appreciation also goes out to our friends who have given us tec
 % to resolve all references
 %
 % ACM needs 'a single self-contained file'!
-%
-
-\newpage
-
-\subsection{Tables}
-Because tables cannot be split across pages, the best
-placement for them is typically the top of the page
-nearest their initial cite.  To
-ensure this proper ``floating'' placement of tables, use the
-environment \textbf{table} to enclose the table's contents and
-the table caption.  The contents of the table itself must go
-in the \textbf{tabular} environment, to
-be aligned properly in rows and columns, with the desired
-horizontal and vertical rules.  Again, detailed instructions
-on \textbf{tabular} material
-is found in the \textit{\LaTeX\ User's Guide}.
-
-Immediately following this sentence is the point at which
-Table 1 is included in the input file; compare the
-placement of the table here with the table in the printed
-dvi output of this document.
-
-\begin{table}
-\centering
-\caption{Frequency of Special Characters}
-\begin{tabular}{|c|c|l|} \hline
-Non-English or Math&Frequency&Comments\\ \hline
-\O & 1 in 1,000& For Swedish names\\ \hline
-$\pi$ & 1 in 5& Common in math\\ \hline
-\$ & 4 in 5 & Used in business\\ \hline
-$\Psi^2_1$ & 1 in 40,000& Unexplained usage\\
-\hline\end{tabular}
-\end{table}
-
-To set a wider table, which takes up the whole width of
-the page's live area, use the environment
-\textbf{table*} to enclose the table's contents and
-the table caption.  As with a single-column table, this wide
-table will ``float" to a location deemed more desirable.
-Immediately following this sentence is the point at which
-Table 2 is included in the input file; again, it is
-instructive to compare the placement of the
-table here with the table in the printed dvi
-output of this document.
-
-
-\begin{table*}
-\centering
-\caption{Some Typical Commands}
-\begin{tabular}{|c|c|l|} \hline
-Command&A Number&Comments\\ \hline
-\texttt{{\char'134}alignauthor} & 100& Author alignment\\ \hline
-\texttt{{\char'134}numberofauthors}& 200& Author enumeration\\ \hline
-\texttt{{\char'134}table}& 300 & For tables\\ \hline
-\texttt{{\char'134}table*}& 400& For wider tables\\ \hline\end{tabular}
-\end{table*}
-% end the environment with {table*}, NOTE not {table}!
-
-
-\begin{figure*}
-\centering
-\epsfig{file=flies.eps}
-\caption{A sample black and white graphic (.eps format)
-that needs to span two columns of text.}
-\end{figure*}
-%ending with figure* is for images that span 2 cols 
- 
+% 
 
 
 \end{document}
