@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  17 APR 2016 22:03
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  17 APR 2016 22:16
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -302,6 +302,16 @@ Overfull \hbox (2.03922pt too wide) in paragraph at lines 105--106
 
 Requested font "aebx9" at 9.0pt
 
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
@@ -315,25 +325,28 @@ Overfull \hbox (11.71582pt too wide) in paragraph at lines 134--135
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 145--150
+Underfull \hbox (badness 10000) in paragraph at lines 146--151
 
  []
 
 File: osi_comparison.eps Graphic file (type eps)
 <osi_comparison.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 File: DHCP_Discover.eps Graphic file (type eps)
 <DHCP_Discover.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: DHCP_Offer.eps Graphic file (type eps)
- <DHCP_Offer.eps>
+
+<DHCP_Offer.eps>
 File: DHCP_Request.eps Graphic file (type eps)
  <DHCP_Request.eps>
 File: DHCP_Ack.eps Graphic file (type eps)
- <DHCP_Ack.eps>
-Overfull \hbox (2.11116pt too wide) in paragraph at lines 191--192
+ <DHCP_Ack.eps> [2]
+Overfull \hbox (2.11116pt too wide) in paragraph at lines 193--194
 []\T1/aer/m/n/9 1. ARP Re-quest: Al-ice's com-puter sends out an ARP re-quest
  []
 
@@ -341,57 +354,58 @@ File: ARP_Request.eps Graphic file (type eps)
 <ARP_Request.eps>
 File: ARP_Response.eps Graphic file (type eps)
  <ARP_Response.eps>
+File: Poisoned_ARP.eps Graphic file (type eps)
+ <Poisoned_ARP.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-File: Poisoned_ARP.eps Graphic file (type eps)
+File: DHCP_Spoofing.png Graphic file (type QTm)
 
-<Poisoned_ARP.eps>
-Overfull \hbox (4.27257pt too wide) in paragraph at lines 223--224
+<use  "DHCP_Spoofing.png" >
+Overfull \hbox (4.27257pt too wide) in paragraph at lines 225--226
 []\T1/aer/m/n/9 The so-lu-tion to this prob-lem is to im-ple-ment DHCP snoop-in
 g. 
  []
 
 
-Overfull \hbox (8.31126pt too wide) in paragraph at lines 226--227
+Overfull \hbox (8.31126pt too wide) in paragraph at lines 228--229
 \T1/aer/m/n/9 ARP Spoof-ing. How-ever, many of these so-lu-tions are de-scribed
 
  []
 
 
-Overfull \hbox (6.71053pt too wide) in paragraph at lines 228--231
+Overfull \hbox (6.71053pt too wide) in paragraph at lines 230--233
 \T1/aer/m/n/9 with cryp-to-graphic mea-sures in place. How-ever, im-ple-ment-in
 g
  []
 
 
-Overfull \hbox (1.41057pt too wide) in paragraph at lines 232--235
+Overfull \hbox (1.41057pt too wide) in paragraph at lines 234--237
 \T1/aer/m/n/9 database is used for com-par-ing with an in-com-ing ARP packet
  []
 
-
-Overfull \hbox (1.90633pt too wide) in paragraph at lines 256--257
+[3]
+Overfull \hbox (1.90633pt too wide) in paragraph at lines 258--259
 []\T1/aer/m/n/9 We cre-ated a soft-ware prod-uct called `Spoof Alert' to mon-i-
 tor
  []
 
-[3]
 File: architecture01.png Graphic file (type QTm)
- <use  "architecture01.png" >
-Overfull \hbox (8.67421pt too wide) in paragraph at lines 279--280
+<use  "architecture01.png" >
+Overfull \hbox (8.67421pt too wide) in paragraph at lines 281--282
 []\T1/aer/m/n/9 The snif-fer runs on a sep-a-rate thread from the main ap-pli-c
 a-tion
  []
 
 
-Overfull \hbox (2.16628pt too wide) in paragraph at lines 293--294
+Overfull \hbox (2.16628pt too wide) in paragraph at lines 295--296
 \T1/aer/m/n/9 Upon re-ceiv-ing an ARP packet that is cap-tured by the snif-fer,
 
  []
 
 Missing character: There is no ’ in font aer9!
+[4]
 File: architecture02.png Graphic file (type QTm)
-<use  "architecture02.png" > [4]
+ <use  "architecture02.png" >
 File: architecture03.png Graphic file (type QTm)
  <use  "architecture03.png" >
 File: architecture04.png Graphic file (type QTm)
@@ -400,44 +414,34 @@ File: architecture04.png Graphic file (type QTm)
 Missing character: There is no ’ in font aer9!
 File: architecture05.png Graphic file (type QTm)
  <use  "architecture05.png" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (12.33711pt too wide) in paragraph at lines 325--328
+Overfull \hbox (12.33711pt too wide) in paragraph at lines 327--330
 \T1/aer/m/n/9 packet and the net-work has to be mod-i-fied to run au-then-ti-ca
 -tion
  []
 
 
-Overfull \hbox (1.72548pt too wide) in paragraph at lines 329--332
+Overfull \hbox (1.72548pt too wide) in paragraph at lines 331--334
 \T1/aer/m/n/9 pack-ets in a net-work. Upon de-tect-ing that a MAC-IP ad-dress
  []
 
 
-Overfull \hbox (10.05849pt too wide) in paragraph at lines 333--335
+Underfull \vbox (badness 4120) has occurred while \output is active []
+
+ [5]
+Overfull \hbox (10.05849pt too wide) in paragraph at lines 335--337
 \T1/aer/m/n/9 Static ARP will pre-vent all vari-ants of ARP spoof-ing. How-ever
 ,
  []
 
 
-Overfull \hbox (4.30917pt too wide) in paragraph at lines 333--335
+Overfull \hbox (4.30917pt too wide) in paragraph at lines 335--337
 \T1/aer/m/n/9 this does not scale well in an large en-vi-ron-ment and gra-tu-it
 ous
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--343
-[]|\T1/aer/m/n/9 ARP re-sponse packet with
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 345--345
 []|\T1/aer/m/n/9 ARP re-sponse packet with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
-\T1/aer/m/n/9 con-sis-tent head-ers that is
  []
 
 
@@ -448,56 +452,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--347
 
 Underfull \hbox (badness 10000) in paragraph at lines 347--347
 \T1/aer/m/n/9 con-sis-tent head-ers that is
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 347--347
-\T1/aer/m/n/9 in-con-sis-tent with the ARP
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 349--349
+[]|\T1/aer/m/n/9 ARP re-sponse packet with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+\T1/aer/m/n/9 con-sis-tent head-ers that is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+\T1/aer/m/n/9 in-con-sis-tent with the ARP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
 []|\T1/aer/m/n/9 DHCP of-fer packet from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
 []|\T1/aer/m/n/9 DHCP spoof
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
 Missing character: There is no ’ in font aer9!
 
-Overfull \hbox (7.34103pt too wide) in paragraph at lines 360--361
+Overfull \hbox (7.34103pt too wide) in paragraph at lines 362--363
 \T1/aer/m/n/9 pre-vent the ad-di-tion of spoofed ARP pair-ings to the com-put-e
 rs
  []
 
 Missing character: There is no ’ in font aer9!
 
-Overfull \hbox (1.49234pt too wide) in paragraph at lines 377--379
+Overfull \hbox (1.49234pt too wide) in paragraph at lines 379--381
 \T1/aer/m/n/9 1. No Sup-port for Net-work En-crypted with WPA-Enterprise: 
  []
 
 
-Overfull \hbox (3.60555pt too wide) in paragraph at lines 389--390
+Overfull \hbox (3.60555pt too wide) in paragraph at lines 391--392
 \T1/aer/m/n/9 us-ing a net-work en-crypted by WPA-Enterprise, it is oth-er-wise
 
  []
 
-(sigproc-sp.bbl
+(sigproc-sp.bbl [6]
 Requested font "aeti9" at 9.0pt
-) [6] (sigproc-sp.aux) ) 
+) [7
+
+] (sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 2049 strings out of 428760
- 22449 string characters out of 3163264
+ 2051 strings out of 428760
+ 22483 string characters out of 3163264
  82956 words of memory out of 3000000
- 5346 multiletter control sequences out of 15000+200000
+ 5347 multiletter control sequences out of 15000+200000
  41318 words of font info for 52 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  39i,10n,28p,599b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on sigproc-sp.pdf (6 pages).
+Output written on sigproc-sp.pdf (7 pages).

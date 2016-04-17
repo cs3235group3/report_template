@@ -114,7 +114,7 @@ Thus, our research focuses on a solution to detect and prevent ARP and DHCP Spoo
 \category{D.4.6}{Security and Protection}{Authentication,\\ Verification}
 
 \terms{Network Security, Intrusion Detection System (IDS), \\
-Address Resolution Protocol (ARP), spoofing}
+Address Resolution Protocol (ARP), spoofing \\ \\} 
 
 \keywords{ARP spoofing, ARP Poisoning, network security, attack, MITM,
 IDS, ARP protection\\} 
@@ -133,6 +133,7 @@ We will be illustrating how an ARP Spoof occurs in Section 2.
 
 Programs which users can use to carry out such an attack include but are not limited to, `Ettercap' and `Cain and Abel'. As these programs are open source and well documented, almost anyone can easily carry out ARP Spoofing with some basic technical knowledge. 
 
+\newpage
 
 \section{Background}
 In order to understand how ARP spoofing occurs, we will need to cover the basics on how computers communicate with each other. In this section, we will be explaining how computers do so, and introduce the basic notions of how an ARP spoof is carried out. 
@@ -185,6 +186,7 @@ The DHCP Server confirms the requested parameters.
 
 \includegraphics[width=3in]{DHCP_Ack.eps}
 
+\newpage
 
 After that, assuming everyone has already had their IPs assigned to them via DHCP, suppose the the user Alice wishes to send some information to Bob. The following steps are then carried out: 
 
@@ -218,7 +220,7 @@ In this case, there is a race condition between Eve and Bob to send a response t
 In DHCP spoofing, there is a race condition between the rouge server and the legitimate server to respond to a user's DHCP Discover broadcast. 
 Should the rouge server respond to the user first, the user then becomes subjected to an MITM attack. 
 
-(to add image) 
+\includegraphics[width=3in]{DHCP_Spoofing.png}
 
 The solution to this problem is to implement DHCP snooping. 
 
