@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  17 APR 2016 22:16
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  17 APR 2016 22:37
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -228,21 +228,183 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \NC@list=\toks36
 \extratabsurround=\skip58
 \backup@length=\skip59
-) (sigproc-sp.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen125
+\Hy@linkcounter=\count109
+\Hy@pagecounter=\count110
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count111
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count112
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen126
+Requested font "pzdr" at 0.00002pt
+\Fld@menulength=\count113
+\Field@Width=\dimen127
+\Fld@charsize=\dimen128
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+
+
+Package hyperref Warning: Option `pdfpagelabels' is turned off
+(hyperref)                because \thepage is undefined.
+
+\c@Item=\count114
+\c@Hfootnote=\count115
+)
+
+Package hyperref Message: Driver (autodetected): hxetex.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hxetex.def"
+File: hxetex.def 2012/11/06 v6.83m Hyperref driver for XeTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
+Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box30
+\c@Hy@AnnotLevel=\count116
+\HyField@AnnotCount=\count117
+\Fld@listcount=\count118
+\c@bookmark@seq@number=\count119
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
+)
+\Hy@SectionHShift=\skip60
+)
+(sigproc-sp.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 35.
+LaTeX Info: Redefining \selectfont on input line 36.
+\AtBeginShipoutBox=\box31
+
+
+Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+Package hyperref Info: Link coloring OFF on input line 36.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count120
+)
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
+
+(sigproc-sp.out) (sigproc-sp.out)
+\@outlinefile=\write3
 Requested font "cmr6" at 6.0pt
 Requested font "cmmi9" at 9.0pt
 Requested font "cmmi6" at 6.0pt
@@ -251,7 +413,7 @@ Requested font "cmsy6" at 6.0pt
 Requested font "cmex9" at 9.0pt
 Requested font "cmex7" at 6.0pt
 Requested font "cmex7" at 5.0pt
-LaTeX Font Info:    Try loading font information for U+msa on input line 99.
+LaTeX Font Info:    Try loading font information for U+msa on input line 101.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -259,7 +421,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 Requested font "msam10" at 9.0pt
 Requested font "msam7" at 6.0pt
 Requested font "msam5" at 5.0pt
-LaTeX Font Info:    Try loading font information for U+msb on input line 99.
+LaTeX Font Info:    Try loading font information for U+msb on input line 101.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -267,7 +429,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Requested font "msbm10" at 9.0pt
 Requested font "msbm7" at 6.0pt
 Requested font "msbm5" at 5.0pt
-LaTeX Font Info:    Try loading font information for U+lasy on input line 99.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 101.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -277,47 +439,50 @@ Requested font "lasy6" at 6.0pt
 Requested font "lasy5" at 5.0pt
 Requested font "aer6" at 6.0pt
 
-Overfull \hbox (7.64684pt too wide) in paragraph at lines 103--104
+Overfull \hbox (7.64684pt too wide) in paragraph at lines 104--105
 \T1/aer/m/n/9 few years, there has been lit-tle im-prove-ments made to low-leve
 l
  []
 
 
-Overfull \hbox (4.3542pt too wide) in paragraph at lines 103--104
+Overfull \hbox (4.3542pt too wide) in paragraph at lines 104--105
 \T1/aer/m/n/9 pro-to-cols on the Link and Phys-i-cal lay-ers of the Open Sys-te
 ms
  []
 
 
-Overfull \hbox (9.50177pt too wide) in paragraph at lines 103--104
+Overfull \hbox (9.50177pt too wide) in paragraph at lines 104--105
 \T1/aer/m/n/9 their in-com-pat-i-bil-ity with ex-ist-ing pro-to-cols. The vul-n
 er-a-bil-ity
  []
 
 
-Overfull \hbox (2.03922pt too wide) in paragraph at lines 105--106
+Overfull \hbox (2.03922pt too wide) in paragraph at lines 106--107
 []\T1/aer/m/n/9 Thus, our re-search fo-cuses on a so-lu-tion to de-tect and pre
 -vent
  []
 
 Requested font "aebx9" at 9.0pt
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
+File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
-Overfull \hbox (11.71582pt too wide) in paragraph at lines 134--135
+)
+Overfull \hbox (11.71582pt too wide) in paragraph at lines 135--136
 \T1/aer/m/n/9 Abel'. As these pro-grams are open source and well doc-u-mented,
  []
 
@@ -325,13 +490,13 @@ Overfull \hbox (11.71582pt too wide) in paragraph at lines 134--135
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 146--151
+Underfull \hbox (badness 10000) in paragraph at lines 147--152
 
  []
 
 File: osi_comparison.eps Graphic file (type eps)
 <osi_comparison.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
@@ -346,7 +511,7 @@ File: DHCP_Request.eps Graphic file (type eps)
  <DHCP_Request.eps>
 File: DHCP_Ack.eps Graphic file (type eps)
  <DHCP_Ack.eps> [2]
-Overfull \hbox (2.11116pt too wide) in paragraph at lines 193--194
+Overfull \hbox (2.11116pt too wide) in paragraph at lines 194--195
 []\T1/aer/m/n/9 1. ARP Re-quest: Al-ice's com-puter sends out an ARP re-quest
  []
 
@@ -361,43 +526,47 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: DHCP_Spoofing.png Graphic file (type QTm)
 
 <use  "DHCP_Spoofing.png" >
-Overfull \hbox (4.27257pt too wide) in paragraph at lines 225--226
+Overfull \hbox (4.27257pt too wide) in paragraph at lines 226--227
 []\T1/aer/m/n/9 The so-lu-tion to this prob-lem is to im-ple-ment DHCP snoop-in
 g. 
  []
 
 
-Overfull \hbox (8.31126pt too wide) in paragraph at lines 228--229
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 228.
+
+
+Overfull \hbox (8.31126pt too wide) in paragraph at lines 229--230
 \T1/aer/m/n/9 ARP Spoof-ing. How-ever, many of these so-lu-tions are de-scribed
 
  []
 
 
-Overfull \hbox (6.71053pt too wide) in paragraph at lines 230--233
+Overfull \hbox (6.71053pt too wide) in paragraph at lines 231--234
 \T1/aer/m/n/9 with cryp-to-graphic mea-sures in place. How-ever, im-ple-ment-in
 g
  []
 
 
-Overfull \hbox (1.41057pt too wide) in paragraph at lines 234--237
+Overfull \hbox (1.41057pt too wide) in paragraph at lines 235--238
 \T1/aer/m/n/9 database is used for com-par-ing with an in-com-ing ARP packet
  []
 
 [3]
-Overfull \hbox (1.90633pt too wide) in paragraph at lines 258--259
+Overfull \hbox (1.90633pt too wide) in paragraph at lines 259--260
 []\T1/aer/m/n/9 We cre-ated a soft-ware prod-uct called `Spoof Alert' to mon-i-
 tor
  []
 
 File: architecture01.png Graphic file (type QTm)
 <use  "architecture01.png" >
-Overfull \hbox (8.67421pt too wide) in paragraph at lines 281--282
+Overfull \hbox (8.67421pt too wide) in paragraph at lines 282--283
 []\T1/aer/m/n/9 The snif-fer runs on a sep-a-rate thread from the main ap-pli-c
 a-tion
  []
 
 
-Overfull \hbox (2.16628pt too wide) in paragraph at lines 295--296
+Overfull \hbox (2.16628pt too wide) in paragraph at lines 296--297
 \T1/aer/m/n/9 Upon re-ceiv-ing an ARP packet that is cap-tured by the snif-fer,
 
  []
@@ -414,102 +583,120 @@ File: architecture04.png Graphic file (type QTm)
 Missing character: There is no ’ in font aer9!
 File: architecture05.png Graphic file (type QTm)
  <use  "architecture05.png" >
-Overfull \hbox (12.33711pt too wide) in paragraph at lines 327--330
+LaTeX Font Info:    Try loading font information for T1+aett on input line 327.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Requested font "aett9" at 9.0pt
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 329.
+
+
+Overfull \hbox (12.33711pt too wide) in paragraph at lines 332--335
 \T1/aer/m/n/9 packet and the net-work has to be mod-i-fied to run au-then-ti-ca
 -tion
  []
 
-
-Overfull \hbox (1.72548pt too wide) in paragraph at lines 331--334
+[5]
+Overfull \hbox (1.72548pt too wide) in paragraph at lines 336--339
 \T1/aer/m/n/9 pack-ets in a net-work. Upon de-tect-ing that a MAC-IP ad-dress
  []
 
 
-Underfull \vbox (badness 4120) has occurred while \output is active []
-
- [5]
-Overfull \hbox (10.05849pt too wide) in paragraph at lines 335--337
+Overfull \hbox (10.05849pt too wide) in paragraph at lines 340--342
 \T1/aer/m/n/9 Static ARP will pre-vent all vari-ants of ARP spoof-ing. How-ever
 ,
  []
 
 
-Overfull \hbox (4.30917pt too wide) in paragraph at lines 335--337
+Overfull \hbox (4.30917pt too wide) in paragraph at lines 340--342
 \T1/aer/m/n/9 this does not scale well in an large en-vi-ron-ment and gra-tu-it
 ous
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--345
+Underfull \hbox (badness 10000) in paragraph at lines 350--350
 []|\T1/aer/m/n/9 ARP re-sponse packet with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--347
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
 []|\T1/aer/m/n/9 ARP re-sponse packet with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--347
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
 \T1/aer/m/n/9 con-sis-tent head-ers that is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
 []|\T1/aer/m/n/9 ARP re-sponse packet with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
 \T1/aer/m/n/9 con-sis-tent head-ers that is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
 \T1/aer/m/n/9 in-con-sis-tent with the ARP
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
 []|\T1/aer/m/n/9 DHCP of-fer packet from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 []|\T1/aer/m/n/9 DHCP spoof
  []
 
 Missing character: There is no ’ in font aer9!
 
-Overfull \hbox (7.34103pt too wide) in paragraph at lines 362--363
+Overfull \hbox (7.34103pt too wide) in paragraph at lines 367--368
 \T1/aer/m/n/9 pre-vent the ad-di-tion of spoofed ARP pair-ings to the com-put-e
 rs
  []
 
 Missing character: There is no ’ in font aer9!
 
-Overfull \hbox (1.49234pt too wide) in paragraph at lines 379--381
+Overfull \hbox (1.49234pt too wide) in paragraph at lines 384--386
 \T1/aer/m/n/9 1. No Sup-port for Net-work En-crypted with WPA-Enterprise: 
  []
 
 
-Overfull \hbox (3.60555pt too wide) in paragraph at lines 391--392
+Overfull \hbox (3.60555pt too wide) in paragraph at lines 396--397
 \T1/aer/m/n/9 us-ing a net-work en-crypted by WPA-Enterprise, it is oth-er-wise
 
  []
 
-(sigproc-sp.bbl [6]
+[6] (sigproc-sp.bbl
 Requested font "aeti9" at 9.0pt
-) [7
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 426.
+ [7
 
-] (sigproc-sp.aux) ) 
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
+ (sigproc-sp.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 426.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 426.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 426.
+ ) 
 Here is how much of TeX's memory you used:
- 2051 strings out of 428760
- 22483 string characters out of 3163264
- 82956 words of memory out of 3000000
- 5347 multiletter control sequences out of 15000+200000
- 41318 words of font info for 52 fonts, out of 3000000 for 9000
+ 9295 strings out of 428760
+ 125303 string characters out of 3163264
+ 198249 words of memory out of 3000000
+ 12535 multiletter control sequences out of 15000+200000
+ 41999 words of font info for 54 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 39i,10n,28p,599b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,10n,46p,599b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on sigproc-sp.pdf (7 pages).
