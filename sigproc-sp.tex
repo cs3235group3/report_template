@@ -99,9 +99,9 @@ Wu Wenqi\\
 }
 \maketitle
 \begin{abstract}
-In light of the `Sparkle Vulnerability'\footnote{https://sparkle-project.org/documentation/security/} incident that occurred early in 2016, our team has been particularly interested in preventing Man-In-The-Middle (MITM) attacks, since that is one of its primary attack vectors. 
+In light of the `Sparkle Vulnerability'\footnote{\url{https://sparkle-project.org/documentation/security/}} incident that occurred early in 2016, our team has been particularly interested in preventing Man-In-The-Middle (MITM) attacks, since that is one of its primary attack vectors. 
 
-While internet security has generally increased over the past few years, there has been little improvements made to low-level protocols on the Link and Physical layers of the Open Systems Interconnection (OSI) model. Protocols such as Address Resolution Protocol (ARP) are still stateless, making them vulnerable to attacks. While solutions such as Secure ARP (S-ARP) exist, adoption of such solutions remain slow due to their incompatibility with existing protocols. The vulnerability in both ARP and DHCP makes carrying out MITM attacks via ARP spoofing or DHCP spoofing trivial. 
+While internet security has generally increased over the past few years, there has been little improvements made to low-\\level protocols on the Link and Physical layers of the Open Systems Interconnection (OSI) model. Protocols such as Address Resolution Protocol (ARP) are still stateless, making them vulnerable to attacks. While solutions such as Secure ARP (S-ARP) exist, adoption of such solutions remain slow due to their incompatibility with existing protocols. The vulnerability in both ARP and DHCP makes carrying out MITM attacks via ARP spoofing or DHCP spoofing trivial. 
 
 Thus, our research focuses on a solution to detect and prevent ARP and DHCP Spoofing while maintaining compatibility with existing protocols. This will greatly limit the MITM attack variants an attacker can consider. 
 
@@ -132,7 +132,7 @@ Some common attacks that can occur after an ARP Spoof are MITM, Denial-of-Servic
 In such cases, the three basic principles of security -\\ Confidentiality, Integrity and Availability - may be violated. 
 We will be illustrating how an ARP Spoof occurs in Section 2. 
 
-Programs which users can use to carry out such an attack include but are not limited to, `Ettercap' and `Cain and Abel'. As these programs are open source and well documented, almost anyone can easily carry out ARP Spoofing with some basic technical knowledge. 
+Programs which users can use to carry out such an attack include but are not limited to, `Ettercap' and `Cain and Abel'. As these programs are open source and documented well, almost anyone can easily carry out ARP Spoofing with some basic technical knowledge. 
 
 \newpage
 
@@ -217,6 +217,8 @@ If an attacker, Eve, wishes to carry out ARP spoofing, this is typically what ha
 
 In this case, there is a race condition between Eve and Bob to send a response to Alice. If Eve succeeds in responding to Alice before Bob can do so, Alice's ARP cache becomes successfully poisoned. 
 
+In addition, to keep Alice's ARP cache poisoned, Eve will continue to send out fake ARP packets at regular intervals, just before Alice's ARP cache flushes the spoofed entry. This is because ARP caches have different time to live(TTL) timings, which it is dependent on the type/model of host or router. The TTL can range from 60 seconds to 20 minutes. 
+
 \subsection{DHCP Spoofing}
 In DHCP spoofing, there is a race condition between the rouge server and the legitimate server to respond to a user's DHCP Discover broadcast. 
 Should the rouge server respond to the user first, the user then becomes subjected to an MITM attack. 
@@ -297,8 +299,9 @@ Upon receiving an ARP packet that is captured by the sniffer, the ARP Defender f
 
 If the headers match, we proceed to check if the packet is consistent with the entries in our ARP table, i.e. there is an entry in the ARP table which has the same sender IP and MAC addresses as the packet. If so, the packet is deemed to be a valid one, with the assumption that our ARP table has not been poisoned.
 
-If the packet is inconsistent with the ARP table, Spoof Alert will perform an active check by sending a TCP SYN packet to the sender's IP address as stated in the packet. If there is a reply, we can assume the packet to be valid. Otherwise, it will be classified as a spoof packet.
-A summary of the ARP defender’s process flow is shown in Figure 5.2.
+If the packet is inconsistent with the ARP table, Spoof Alert will perform an active check by sending a TCP SYN packet to the sender's IP address as stated in the packet. Assuming that there are spoofers in the network, they will not have the IP address as stated in the TCP SYN packets. The spoofers therefore will not respond to the TCP SYN packet as the packet will be discarded by their network stack. Only the real host with the legitimate IP address will respond to the TCP SYN.
+
+In the absence of replies after the TCP SYN packet is sent out, the ARP packets previously received will be classified as a spoof packet. A summary of the ARP defenders process flow is shown in Figure 5.2.
 
 \includegraphics[width=3in]{architecture02.png} \\
 Figure 5.2: Process flow of the ARP defender on receiving a packet.
@@ -338,7 +341,8 @@ arpwatch is a computer software tool used to monitor ARP packets in a network. U
 Upon detecting that a pairing has changed, Spoof Alert does not sound off the alarm immediately but sends a TCP SYN packet to the sender. If a response is given, it can be assumed that the packet is valid.
 
 3. Static ARP \\ 
-Static ARP will prevent all variants of ARP spoofing. However, this does not scale well in an large environment and gratuitous packets may not be supported by the network.
+Static ARP will prevent all variants of ARP spoofing. \\
+However, this does not scale well in an large environment and gratuitous packets may not be supported by the network.
 
 \section{Performance}
 We tested the performance of our implementation using the Python library Scapy. The results are presented in Figure 7.1.
@@ -357,8 +361,8 @@ DHCP offer packet from white-listed computer & Valid \\
 \hline
 DHCP offer packet from non-white listed computer & DHCP spoof alert \\
 \hline      
-\end{tabular}
-
+\end{tabular} \\
+Figure 7.1: Results from various experiments 
 
 \section{Limitations and Future Work}
 Our project has several issues which can be improved on.
@@ -375,16 +379,18 @@ Currently, our tool only sniffs the network but does not prevent the addition of
 
 4. Come up with a less intrusive way of alerting the user of possible spoof attacks in the network.
 
-5. Prevent the addition of spoofed ARP pairings to the computer’s local ARP cache
+5. Prevent the addition of spoofed ARP pairings to the computer’s local ARP cache.
 
-6. Various UI Bug fixes
+6. Implementation of a Graph interface for the user to monitor the ARP packet flow for his computer. 
+
+7. Various UI Bug fixes
 
 \subsection{Future Work: Backend Code}
 
 1. No Support for Network Encrypted with WPA-Enterprise:\\
 Our solution will not work on a network that uses\\ WPA-Enterprise level of encryption. This is because the structure of WPA-Enterprise is such that each user can only see his incoming or outgoing network connections. 
 
-2. Assumes the user is on an Insecure Network: \\
+2. Assumes the User is on an Insecure Network: \\
 Our solution assumes that the user does not have any form of defence installed on his computer. (eg. no firewall that can prevent ARP spoofing, a network that does not use any enterprise level encryption, etc.) However, it is more likely that users have at least some kind of basic protection system on his computer. 
 
 3. Tested Only on Wireless Networks:\\
@@ -393,11 +399,14 @@ The attacks have only been tested to work for various users across the wireless 
 We hope to improve our solution for a more varied set of systems in the future. Furthermore, if we are able to tell who our attacker is, we hope to implement a more aggressive method to counter their ARP attacks, such as spoofing them back. 
 
 \section{Conclusion}
-Through this project, we have learnt that ARP Spoofing is not easy to defend against. Even though there are solutions on the market that have been out for a while, unless one is using a network encrypted by WPA-Enterprise, it is otherwise easy to fall prey to such attacks. 
+Through this project, we have learnt that ARP Spoofing is not easy to defend against. Even though there are solutions on the market that have been out for a while, uptake of these market solutions have been slow because of various reasons, such as incompatibility with existing work flows. 
 
-Furthermore, as active detection of ARP spoofing is not widely implemented yet, our solution may not be entirely foolproof. Thus, we will need to put in more work to make the solution more viable for a wider variety of situations. 
+In fact, it might be difficult to get people to improve and change low level protocols, such as DHCP and ARP, to use new standards. This is because such low level protocols are primarily designed for efficiency over security, and also because there is a lack of emphasis on such low level protocols. From Kaspersky's Real-Time Cyber Threat Map\footnote{\url{https://cybermap.kaspersky.com/}}, we can see that network attacks are usually not among the top problems detected by Kaspersky's products. Thus, it makes sense that less emphasis will be placed on securing low level network protocols such as the ARP. 
 
-(to modify conclusion and include more stuff) 
+As we have realised through the development of our Python code, unless one is using a network that has been encrypted by WPA-Enterprise, it is otherwise easy to fall prey to MITM attacks. 
+
+Furthermore, as active detection of ARP spoofing is not widely implemented yet, our solution may not be entirely foolproof. Thus, we will need to put in more work and testing to make the solution more viable for a wider variety of situations. 
+
 %\end{document}  % This is where a 'short' article might terminate
 
 %ACKNOWLEDGMENTS are optional

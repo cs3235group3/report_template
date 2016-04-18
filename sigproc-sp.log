@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  17 APR 2016 22:37
+This is XeTeX, Version 3.14159265-2.6-0.99991 (MiKTeX 2.9) (preloaded format=xelatex 2015.8.17)  18 APR 2016 09:38
 entering extended mode
 **sigproc-sp.tex
 (sigproc-sp.tex
@@ -438,22 +438,22 @@ Requested font "lasy9" at 9.0pt
 Requested font "lasy6" at 6.0pt
 Requested font "lasy5" at 5.0pt
 Requested font "aer6" at 6.0pt
+LaTeX Font Info:    Try loading font information for T1+aett on input line 102.
 
-Overfull \hbox (7.64684pt too wide) in paragraph at lines 104--105
-\T1/aer/m/n/9 few years, there has been lit-tle im-prove-ments made to low-leve
-l
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Requested font "aett9" at 9.0pt
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[][][][]$\T1/aett/m/n/9 https : / / sparkle-[]project . org / documentation /
  []
 
 
-Overfull \hbox (4.3542pt too wide) in paragraph at lines 104--105
-\T1/aer/m/n/9 pro-to-cols on the Link and Phys-i-cal lay-ers of the Open Sys-te
-ms
- []
-
-
-Overfull \hbox (9.50177pt too wide) in paragraph at lines 104--105
-\T1/aer/m/n/9 their in-com-pat-i-bil-ity with ex-ist-ing pro-to-cols. The vul-n
-er-a-bil-ity
+Overfull \hbox (3.91042pt too wide) in paragraph at lines 104--105
+\T1/aer/m/n/9 Ad-dress Res-o-lu-tion Pro-to-col (ARP) are still state-less, mak
+-ing
  []
 
 
@@ -482,10 +482,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--122
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 )
-Overfull \hbox (11.71582pt too wide) in paragraph at lines 135--136
-\T1/aer/m/n/9 Abel'. As these pro-grams are open source and well doc-u-mented,
- []
-
 [1
 
 
@@ -526,177 +522,170 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: DHCP_Spoofing.png Graphic file (type QTm)
 
 <use  "DHCP_Spoofing.png" >
-Overfull \hbox (4.27257pt too wide) in paragraph at lines 226--227
+Overfull \hbox (4.27257pt too wide) in paragraph at lines 228--229
 []\T1/aer/m/n/9 The so-lu-tion to this prob-lem is to im-ple-ment DHCP snoop-in
 g. 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 228.
+(hyperref)                removing `\\' on input line 230.
 
 
-Overfull \hbox (8.31126pt too wide) in paragraph at lines 229--230
+Overfull \hbox (8.31126pt too wide) in paragraph at lines 231--232
 \T1/aer/m/n/9 ARP Spoof-ing. How-ever, many of these so-lu-tions are de-scribed
 
  []
 
 
-Overfull \hbox (6.71053pt too wide) in paragraph at lines 231--234
+Overfull \hbox (6.71053pt too wide) in paragraph at lines 233--236
 \T1/aer/m/n/9 with cryp-to-graphic mea-sures in place. How-ever, im-ple-ment-in
 g
  []
 
-
-Overfull \hbox (1.41057pt too wide) in paragraph at lines 235--238
+[3]
+Overfull \hbox (1.41057pt too wide) in paragraph at lines 237--240
 \T1/aer/m/n/9 database is used for com-par-ing with an in-com-ing ARP packet
  []
 
-[3]
-Overfull \hbox (1.90633pt too wide) in paragraph at lines 259--260
+
+Overfull \hbox (1.90633pt too wide) in paragraph at lines 261--262
 []\T1/aer/m/n/9 We cre-ated a soft-ware prod-uct called `Spoof Alert' to mon-i-
 tor
  []
 
 File: architecture01.png Graphic file (type QTm)
 <use  "architecture01.png" >
-Overfull \hbox (8.67421pt too wide) in paragraph at lines 282--283
+Overfull \hbox (8.67421pt too wide) in paragraph at lines 284--285
 []\T1/aer/m/n/9 The snif-fer runs on a sep-a-rate thread from the main ap-pli-c
 a-tion
  []
 
 
-Overfull \hbox (2.16628pt too wide) in paragraph at lines 296--297
+Overfull \hbox (2.16628pt too wide) in paragraph at lines 298--299
 \T1/aer/m/n/9 Upon re-ceiv-ing an ARP packet that is cap-tured by the snif-fer,
 
  []
 
-Missing character: There is no ’ in font aer9!
 [4]
 File: architecture02.png Graphic file (type QTm)
  <use  "architecture02.png" >
 File: architecture03.png Graphic file (type QTm)
  <use  "architecture03.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: architecture04.png Graphic file (type QTm)
 
 <use  "architecture04.png" >
 Missing character: There is no ’ in font aer9!
 File: architecture05.png Graphic file (type QTm)
  <use  "architecture05.png" >
-LaTeX Font Info:    Try loading font information for T1+aett on input line 327.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-Requested font "aett9" at 9.0pt
-
+ [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 329.
+(hyperref)                removing `\\' on input line 332.
 
 
-Overfull \hbox (12.33711pt too wide) in paragraph at lines 332--335
+Overfull \hbox (12.33711pt too wide) in paragraph at lines 335--338
 \T1/aer/m/n/9 packet and the net-work has to be mod-i-fied to run au-then-ti-ca
 -tion
  []
 
-[5]
-Overfull \hbox (1.72548pt too wide) in paragraph at lines 336--339
+
+Overfull \hbox (1.72548pt too wide) in paragraph at lines 339--342
 \T1/aer/m/n/9 pack-ets in a net-work. Upon de-tect-ing that a MAC-IP ad-dress
  []
 
 
-Overfull \hbox (10.05849pt too wide) in paragraph at lines 340--342
-\T1/aer/m/n/9 Static ARP will pre-vent all vari-ants of ARP spoof-ing. How-ever
-,
- []
+Overfull \hbox (1.44742pt too wide) in paragraph at lines 343--346
+\T1/aer/m/n/9 and gra-tu-itous pack-ets may not be sup-ported by the net-work. 
 
-
-Overfull \hbox (4.30917pt too wide) in paragraph at lines 340--342
-\T1/aer/m/n/9 this does not scale well in an large en-vi-ron-ment and gra-tu-it
-ous
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 350--350
-[]|\T1/aer/m/n/9 ARP re-sponse packet with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 352--352
-[]|\T1/aer/m/n/9 ARP re-sponse packet with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 352--352
-\T1/aer/m/n/9 con-sis-tent head-ers that is
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 354--354
 []|\T1/aer/m/n/9 ARP re-sponse packet with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
-\T1/aer/m/n/9 con-sis-tent head-ers that is
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
-\T1/aer/m/n/9 in-con-sis-tent with the ARP
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 356--356
+[]|\T1/aer/m/n/9 ARP re-sponse packet with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+\T1/aer/m/n/9 con-sis-tent head-ers that is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
+[]|\T1/aer/m/n/9 ARP re-sponse packet with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
+\T1/aer/m/n/9 con-sis-tent head-ers that is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
+\T1/aer/m/n/9 in-con-sis-tent with the ARP
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 []|\T1/aer/m/n/9 DHCP of-fer packet from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 []|\T1/aer/m/n/9 DHCP spoof
  []
 
 Missing character: There is no ’ in font aer9!
 
-Overfull \hbox (7.34103pt too wide) in paragraph at lines 367--368
+Overfull \hbox (7.34103pt too wide) in paragraph at lines 371--372
 \T1/aer/m/n/9 pre-vent the ad-di-tion of spoofed ARP pair-ings to the com-put-e
 rs
  []
 
 Missing character: There is no ’ in font aer9!
 
-Overfull \hbox (1.49234pt too wide) in paragraph at lines 384--386
+Overfull \hbox (1.49234pt too wide) in paragraph at lines 390--392
 \T1/aer/m/n/9 1. No Sup-port for Net-work En-crypted with WPA-Enterprise: 
  []
 
-
-Overfull \hbox (3.60555pt too wide) in paragraph at lines 396--397
-\T1/aer/m/n/9 us-ing a net-work en-crypted by WPA-Enterprise, it is oth-er-wise
-
+[6]
+Overfull \hbox (3.38214pt too wide) in paragraph at lines 404--405
+\T1/aer/m/n/9 be-cause there is a lack of em-pha-sis on such low level pro-to-c
+ols.
  []
 
-[6] (sigproc-sp.bbl
+
+Overfull \hbox (1.00511pt too wide) in paragraph at lines 406--407
+\T1/aer/m/n/9 by WPA-Enterprise, it is oth-er-wise easy to fall prey to MITM
+ []
+
+(sigproc-sp.bbl
 Requested font "aeti9" at 9.0pt
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 426.
- [7
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
  (sigproc-sp.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 426.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 426.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 426.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 435.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 435.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
  ) 
 Here is how much of TeX's memory you used:
  9295 strings out of 428760
  125303 string characters out of 3163264
- 198249 words of memory out of 3000000
+ 197249 words of memory out of 3000000
  12535 multiletter control sequences out of 15000+200000
  41999 words of font info for 54 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 39i,10n,46p,599b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,10n,46p,644b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on sigproc-sp.pdf (7 pages).
